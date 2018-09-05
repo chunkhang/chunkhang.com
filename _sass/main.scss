@@ -1,7 +1,6 @@
 /* Variables */
 
 $green: #34b044;
-$dark-green: #23752d;
 
 /* Base styles */
 
@@ -9,7 +8,7 @@ $dark-green: #23752d;
 a {
   color: $green;
   &:hover, &:focus, &:active {
-    color: $dark-green;
+    color: unset;
   }
 }
 
@@ -53,7 +52,7 @@ a {
       }
     }
     .current {
-      color: $dark-green;
+      color: unset;
     }
   }
 }

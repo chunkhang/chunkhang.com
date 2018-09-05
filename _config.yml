@@ -4,16 +4,7 @@ url: "http://chunkhang.com"
 
 permalink: pretty
 
-collections:
-  authors:
-    output: true
-
 defaults:
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
   - scope:
       path: ""
       type: "posts"
