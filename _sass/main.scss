@@ -23,22 +23,32 @@ a {
     margin: 0;
   }
   hr {
-    margin: 1.5rem auto;
+    margin: 1.2rem auto;
     width: 50%;
   }
   nav {
     display: flex;
     justify-content: center;
-    a:not(:last-child) {
-      margin-right: 5.5rem;
+    a:not(:last-of-type) {
+      margin-right: 2.5rem;
     }
     p {
       margin: 0;
+    }
+    .dot {
+      margin-right: 2.5rem;
+      &:last-child {
+        display: none;
+      }
     }
     .current {
       color: $dark-green;
     }
   }
+}
+
+#body {
+  margin-top: 1rem;
 }
 
 /* Responsive styles */

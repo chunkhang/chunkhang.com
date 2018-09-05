@@ -22,17 +22,18 @@
             <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
               <p>{{ item.name }}</p>
             </a>
+            <p class="dot">&middot;</p>
           {% endfor %}
         </nav>
         <hr>
       </div>
     </div>
     <!-- Body -->
-    <!-- <div class="row"> -->
-    <!--   <div class="column"> -->
-    <!--     {{ content }} -->
-    <!--   </div> -->
-    <!-- </div> -->
+    <div class="row" id="body">
+      <div class="column">
+        {{ content }}
+      </div>
+    </div>
     <!-- Footer -->
   </div>
 </body>
