@@ -25,4 +25,5 @@ defaults:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - serve
   - deploy
