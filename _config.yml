@@ -2,6 +2,8 @@ title: Marcus Mu's Corner
 description: Marcus Mu's little personal corner in the vast cyberspace
 url: "http://chunkhang.com"
 
+permalink: pretty
+
 collections:
   authors:
     output: true
