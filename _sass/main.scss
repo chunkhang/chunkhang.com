@@ -1,3 +1,55 @@
-.current {
-  color: green
+/* Variables */
+
+$green: #34b044;
+$dark-green: #23752d;
+
+/* Base styles */
+
+a {
+  color: $green;
+  &:hover, &:focus, &:active {
+    color: $dark-green;
+  }
+}
+
+#header {
+  margin-top: 3.5rem;
+  text-align: center;
+  h2 {
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  p {
+    margin: 0;
+  }
+  hr {
+    margin: 1.5rem 0;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    a:not(:last-child) {
+      margin-right: 5.5rem;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+
+/* Responsive styles */
+
+// Larger than mobile screen
+@media (min-width: 40.0rem) {
+
+}
+
+// Larger than tablet screen
+@media (min-width: 80.0rem) {
+
+}
+
+// Larger than desktop screen
+@media (min-width: 120.0rem) {
+
 }

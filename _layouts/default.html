@@ -10,7 +10,30 @@
   {% seo %}
 </head>
 <body>
-  {% include navigation.html %}
-  {{ content }}
+  <div class="container">
+    <!-- Header -->
+    <div class="row" id="header">
+      <div class="column">
+        <h2>Marcus Mu</h2>
+        <p>Tea over coffee</p>
+        <hr>
+        <nav>
+          {% for item in site.data.navigation %}
+            <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
+              <p>{{ item.name }}</p>
+            </a>
+          {% endfor %}
+        </nav>
+        <hr>
+      </div>
+    </div>
+    <!-- Body -->
+    <!-- <div class="row"> -->
+    <!--   <div class="column"> -->
+    <!--     {{ content }} -->
+    <!--   </div> -->
+    <!-- </div> -->
+    <!-- Footer -->
+  </div>
 </body>
 </html>
