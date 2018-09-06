@@ -52,6 +52,20 @@
       </div>
     </div>
     <!-- Footer -->
+    <div class="row" id="footer">
+      <div class="column">
+        <hr>
+        <ul>
+          {% for item in site.data.social %}
+            <li>
+              <a href="{{ item.link }}">
+                <i class="{{ item.font }}"></i>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
   </div>
   <!-- Scripts -->
   <script type="text/javascript" src="/assets/js/scripts.js" ></script>

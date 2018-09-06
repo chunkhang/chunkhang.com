@@ -18,6 +18,7 @@ a {
 hr {
   margin: 1.2rem auto;
   border-top-width: 0.25rem;
+  width: 25rem;
 }
 
 .container {
@@ -46,9 +47,6 @@ hr {
   }
   #navigation {
     display: none;
-    hr {
-      width: 25rem;
-    }
     nav {
       display: flex;
       flex-direction: column;
@@ -71,6 +69,29 @@ hr {
   margin-top: 1rem;
 }
 
+#footer {
+  margin-bottom: 3.5rem;
+  hr {
+    margin-bottom: 0.5rem;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    li {
+      font-size: 2.8rem;
+      margin-right: 1.5rem;
+      margin-bottom: 0;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        color: unset;
+      }
+    }
+  }
+}
 
 /* Responsive styles */
 
@@ -81,15 +102,16 @@ hr {
     font-size: 58.5%;
   }
 
+  hr {
+    width: 50rem;
+  }
+
   #header {
     #hamburger-toggle {
       display: none;
     }
     #navigation {
       display: block !important;
-      hr {
-        width: 50rem;
-      }
       nav {
         flex-direction: row;
         justify-content: center;
