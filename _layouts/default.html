@@ -26,17 +26,19 @@
     <div class="row" id="header">
       <div class="column">
         <a href="/" id="name"><h2>Marcus Mu</h2></a>
-        <p>Tea over coffee</p>
-        <hr>
-        <nav>
-          {% for item in site.data.navigation %}
-            <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
-              <p>{{ item.name }}</p>
-            </a>
-            <p class="dot">&middot;</p>
-          {% endfor %}
-        </nav>
-        <hr>
+        <p id="subtitle">Tea over coffee</p>
+        <div id="navigation">
+          <hr>
+          <nav>
+            {% for item in site.data.navigation %}
+              <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
+                <p>{{ item.name }}</p>
+              </a>
+              <p class="dot">&middot;</p>
+            {% endfor %}
+          </nav>
+          <hr>
+        </div>
       </div>
     </div>
     <!-- Body -->
