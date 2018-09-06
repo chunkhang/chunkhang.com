@@ -86,7 +86,7 @@ hr {
       display: none;
     }
     #navigation {
-      display: block;
+      display: block !important;
       hr {
         width: 50rem;
       }
