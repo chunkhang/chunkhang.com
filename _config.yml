@@ -4,6 +4,10 @@ url: "http://chunkhang.com"
 
 permalink: pretty
 
+collections:
+  posts:
+    permalink: /blog/:title/
+
 defaults:
   - scope:
       path: ""
