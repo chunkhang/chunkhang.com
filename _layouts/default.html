@@ -35,7 +35,8 @@
           <hr>
           <nav>
             {% for item in site.data.navigation %}
-              <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
+              {% assign url = page.url | remove: 'index.html' %}
+              <a href="{{ item.link }}" {% if url == item.link %}class="current"{% endif %}>
                 <p>{{ item.name }}</p>
               </a>
               <p class="dot">&middot;</p>

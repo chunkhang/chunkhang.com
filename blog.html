@@ -1,14 +1,32 @@
 ---
 title: Blog
+pagination:
+  enabled: true
 ---
 
 <h1>Blog</h1>
 
 <ul>
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     <li>
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p>{{ post.date | date_to_string }}</p>
       <p>{{ post.excerpt }}</p>
     </li>
   {% endfor %}
 </ul>
+
+{% if paginator.total_pages > 1 %}
+<ul>
+  {% if paginator.previous_page %}
+  <li class="previous">
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li class="next">
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+  </li>
+  {% endif %}
+</ul>
+{% endif %}
