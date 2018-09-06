@@ -25,6 +25,7 @@ hr {
   max-width: 80rem;
 }
 
+// Header
 #header {
   margin-top: 3.5rem;
   text-align: center;
@@ -65,12 +66,13 @@ hr {
   }
 }
 
+// Body
 #body {
   margin-top: 1rem;
 }
 
+// Footer
 #footer {
-  margin-bottom: 3.5rem;
   hr {
     margin-bottom: 0.5rem;
   }
@@ -89,6 +91,24 @@ hr {
       a {
         color: unset;
       }
+    }
+  }
+}
+
+// Home page
+.introduction {
+  font-size: 2rem;
+  &:last-of-type {
+    margin-bottom: 1.2rem;
+  }
+}
+#welcome {
+  li {
+    margin-bottom: 0.4rem;
+    h5 {
+      display: inline-block;
+      margin-bottom: 0;
+      margin-left: 0.5rem;
     }
   }
 }
