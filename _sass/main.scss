@@ -103,10 +103,11 @@ hr {
   }
 }
 #welcome {
+  margin-left: 1.5rem;
   li {
+    list-style-position: initial;
     margin-bottom: 0.4rem;
     h5 {
-      display: inline-block;
       margin-bottom: 0;
       margin-left: 0.5rem;
     }
