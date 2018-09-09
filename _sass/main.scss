@@ -1,8 +1,6 @@
-/* Variables */
+/* Base styles */
 
 $green: #34b044;
-
-/* Base styles */
 
 html {
   font-size: 55%;
@@ -116,8 +114,28 @@ hr {
 
 /* Responsive styles */
 
-// Larger than mobile screen
-@media (min-width: 50.0rem) {
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
+
+@include for-tablet-portrait-up {
 
   html {
     font-size: 58.5%;
@@ -148,16 +166,10 @@ hr {
 
 }
 
-// Larger than tablet screen
-@media (min-width: 80.0rem) {
+@include for-tablet-landscape-up {
+
   html {
     font-size: 62.5%;
   }
-}
 
-// Larger than desktop screen
-@media (min-width: 120.0rem) {
-  html {
-    font-size: 68.5%;
-  }
 }
