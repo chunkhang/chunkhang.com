@@ -1,6 +1,4 @@
-/* Base styles */
-
-$green: #34b044;
+@import "magic";
 
 html {
   font-size: 55%;
@@ -110,66 +108,4 @@ hr {
       margin-left: 0.5rem;
     }
   }
-}
-
-/* Responsive styles */
-
-@mixin for-tablet-portrait-up {
-  @media (min-width: 600px) {
-    @content;
-  }
-}
-@mixin for-tablet-landscape-up {
-  @media (min-width: 900px) {
-    @content;
-  }
-}
-@mixin for-desktop-up {
-  @media (min-width: 1200px) {
-    @content;
-  }
-}
-@mixin for-big-desktop-up {
-  @media (min-width: 1800px) {
-    @content;
-  }
-}
-
-@include for-tablet-portrait-up {
-
-  html {
-    font-size: 58.5%;
-  }
-
-  hr {
-    width: 50rem;
-  }
-
-  #header {
-    #hamburger-toggle {
-      display: none;
-    }
-    #navigation {
-      display: block !important;
-      nav {
-        flex-direction: row;
-        justify-content: center;
-        a:not(:last-of-type) {
-          margin-right: 2.5rem;
-        }
-        .dot {
-          margin-right: 2.5rem;
-        }
-      }
-    }
-  }
-
-}
-
-@include for-tablet-landscape-up {
-
-  html {
-    font-size: 62.5%;
-  }
-
 }

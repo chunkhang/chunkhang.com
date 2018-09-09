@@ -1,0 +1,40 @@
+@import "magic";
+
+@include for-tablet-portrait-up {
+
+  html {
+    font-size: 58.5%;
+  }
+
+  hr {
+    width: 50rem;
+  }
+
+  #header {
+    #hamburger-toggle {
+      display: none;
+    }
+    #navigation {
+      display: block !important;
+      nav {
+        flex-direction: row;
+        justify-content: center;
+        a:not(:last-of-type) {
+          margin-right: 2.5rem;
+        }
+        .dot {
+          margin-right: 2.5rem;
+        }
+      }
+    }
+  }
+
+}
+
+@include for-tablet-landscape-up {
+
+  html {
+    font-size: 62.5%;
+  }
+
+}
