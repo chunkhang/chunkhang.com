@@ -10,7 +10,7 @@ pagination:
   {% for post in paginator.posts %}
     <li>
       <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      <h6>{{ post.date | date_to_string }}</h6>
+      <h6>{{ post.date | date: '%B %d, %Y' }}</h6>
       <div class="excerpt clearfix">
         <i class="fas fa-quote-left"></i>
         <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
