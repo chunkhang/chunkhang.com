@@ -17,6 +17,11 @@ hr {
   width: 25rem;
 }
 
+.current {
+  color: unset;
+}
+
+// Container
 .container {
   max-width: 80rem;
   margin: 3.5rem auto;
@@ -51,9 +56,6 @@ hr {
       p {
         margin: 0;
         display: inline-block;
-      }
-      .current {
-        color: unset;
       }
       .dot:last-child {
         display: none;
@@ -111,7 +113,7 @@ hr {
 }
 
 // Blog index
-#post-list {
+#blog-post-list {
   list-style: none;
   h3 {
     margin-bottom: 0.2rem;
@@ -124,5 +126,15 @@ hr {
     p {
       margin: 0 3rem;
     }
+  }
+}
+#blog-page-navigation {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  font-weight: bold;
+  li:not(:last-child) {
+    margin-right: 1.5rem;
   }
 }

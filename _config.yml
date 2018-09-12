@@ -24,10 +24,13 @@ defaults:
 
 pagination:
   enabled: true
-  per_page: 5
   sort_reverse: true
   permalink: "/:num/"
   title: ":title - Page :num"
+  per_page: 5
+  trail:
+    before: 2
+    after: 2
 
 exclude:
   - Gemfile
