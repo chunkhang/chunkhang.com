@@ -1,8 +1,10 @@
 (function() {
+
   'use strict';
 
-  let navigation = document.getElementById('navigation');
-  let hamburger = document.getElementById('hamburger-toggle');
+  // Hamburger menu
+  const navigation = document.getElementById('navigation');
+  const hamburger = document.getElementById('hamburger-toggle');
   hamburger.addEventListener('click', function() {
     if (this.classList.contains('active')) {
       navigation.style.display = 'none';
@@ -12,4 +14,11 @@
       this.classList.add('active');
     }
   });
+
+  // Disable current link
+  const currentLinks = document.getElementsByClassName('current');
+  for (let i = 0; i < currentLinks.length; i++) {
+    currentLinks[i].removeAttribute('href');
+  }
+
 })();
