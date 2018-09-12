@@ -8,70 +8,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} - Marcus Mu</title>
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#2b5797">
-  <meta name="theme-color" content="#ffffff">
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-  <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
-  <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  {% include favicon.html %}
+  {% include css.html %}
   {% seo %}
 </head>
 <body>
   <div class="container">
-    <!-- Header -->
     <div class="row" id="header">
       <div class="column">
-        <a href="/" id="name"><h2>Marcus Mu</h2></a>
-        <p id="subtitle">Tea over coffee</p>
-        <span id="hamburger-toggle">
-          <i class="fas fa-bars"></i>
-        </span>
-        <div id="navigation">
-          <hr>
-          <nav>
-            {% for item in site.data.navigation %}
-              {% assign url = page.url | remove: 'index.html' %}
-              <a href="{{ item.link }}" {% if url == item.link %}class="current"{% endif %}>
-                <p>{{ item.name }}</p>
-              </a>
-              <p class="dot">&middot;</p>
-            {% endfor %}
-          </nav>
-          <hr>
-        </div>
+        {% include header.html %}
       </div>
     </div>
-    <!-- Body -->
     <div class="row" id="body">
       <div class="column">
         {{ content }}
       </div>
     </div>
-    <!-- Footer -->
     <div class="row" id="footer">
       <div class="column">
-        <hr>
-        <ul>
-          {% for item in site.data.social %}
-            <li>
-              <a href="{{ item.link }}">
-                <i class="{{ item.font }}"></i>
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
+        {% include footer.html %}
       </div>
     </div>
   </div>
-  <!-- Scripts -->
-  <script type="text/javascript" src="/assets/js/scripts.js" ></script>
+  {% include js.html %}
 </body>
 </html>
