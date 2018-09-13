@@ -30,11 +30,11 @@
     const message = messageField.value.trim();
     let valid = true;
     if (subject === '') {
-      subjectField.style.borderColor = 'red';
+      subjectField.classList.add('invalid');
       valid = false;
     }
     if (message === '') {
-      messageField.style.borderColor = 'red';
+      messageField.classList.add('invalid');
       valid = false;
     }
     if (valid) {
@@ -47,10 +47,10 @@
     }
   });
   subjectField.addEventListener('focus', function() {
-    this.style = '';
+    this.classList.remove('invalid');
   });
   messageField.addEventListener('focus', function() {
-    this.style = '';
+    this.classList.remove('invalid');
   });
 
 })();

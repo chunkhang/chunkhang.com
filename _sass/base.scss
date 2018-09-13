@@ -32,6 +32,10 @@ button {
   cursor: default;
 }
 
+.invalid {
+  border-color: $red !important;
+}
+
 // Container
 .container {
   max-width: 80rem;
