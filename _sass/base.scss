@@ -17,6 +17,16 @@ hr {
   width: 25rem;
 }
 
+input[type="text"]:focus, textarea:focus {
+  border-color: $green;
+}
+
+button {
+  margin-bottom: 0;
+  background-color: $green;
+  border-color: $green;
+}
+
 .current {
   color: unset;
   cursor: default;
@@ -152,4 +162,9 @@ hr {
   p {
     margin-bottom: 2rem;
   }
+}
+
+// Contact page
+#message-field {
+  min-height: 10.5rem;
 }

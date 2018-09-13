@@ -21,4 +21,23 @@
     currentLinks[i].removeAttribute('href');
   }
 
+  // Contact form
+  const subjectField = document.getElementById('subject-field');
+  const messageField = document.getElementById('message-field');
+  const sendButton = document.getElementById('send-button');
+  sendButton.addEventListener('click', function() {
+    const subject = subjectField.value.trim();
+    const message = messageField.value.trim();
+    if (subject !== '' && message !== '') {
+      const mailString =
+        `mailto:chunkhang@gmail.com?subject=${subject}&body=${message}`;
+      const mailUrl = mailString
+        .replace(/ /g, '%20')
+        .replace(/\n/g, '%0A');
+      window.location.href = mailUrl;
+    } else {
+      alert('Nope!');
+    }
+  });
+
 })();
