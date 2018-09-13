@@ -28,16 +28,29 @@
   sendButton.addEventListener('click', function() {
     const subject = subjectField.value.trim();
     const message = messageField.value.trim();
-    if (subject !== '' && message !== '') {
+    let valid = true;
+    if (subject === '') {
+      subjectField.style.borderColor = 'red';
+      valid = false;
+    }
+    if (message === '') {
+      messageField.style.borderColor = 'red';
+      valid = false;
+    }
+    if (valid) {
       const mailString =
         `mailto:chunkhang@gmail.com?subject=${subject}&body=${message}`;
       const mailUrl = mailString
         .replace(/ /g, '%20')
         .replace(/\n/g, '%0A');
       window.location.href = mailUrl;
-    } else {
-      alert('Nope!');
     }
+  });
+  subjectField.addEventListener('focus', function() {
+    this.style = '';
+  });
+  messageField.addEventListener('focus', function() {
+    this.style = '';
   });
 
 })();
