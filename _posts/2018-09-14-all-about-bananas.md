@@ -1,4 +1,5 @@
 ---
+layout: post
 title: All about Bananas
 date: 2018-09-14 14:44 +0800
 ---
