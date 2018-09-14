@@ -3,14 +3,14 @@
   'use strict';
 
   // Hamburger menu
-  const navigation = document.getElementById('navigation');
-  const hamburger = document.getElementById('hamburger-toggle');
+  const navbar = document.getElementById('js-navbar');
+  const hamburger = document.getElementById('js-hamburger');
   hamburger.addEventListener('click', function() {
     if (this.classList.contains('active')) {
-      navigation.style.display = 'none';
+      navbar.style.display = 'none';
       this.classList.remove('active');
     } else {
-      navigation.style.display = 'block';
+      navbar.style.display = 'block';
       this.classList.add('active');
     }
   });

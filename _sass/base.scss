@@ -43,41 +43,52 @@ button {
 }
 
 // Header
-#header {
+.site-header {
   text-align: center;
-  #name {
-    color: unset;
-    display: inline-block;
-    h2 {
-      font-weight: bold;
-      margin-bottom: 0;
+
+  .navigation-header {
+    .navigation-brand {
+      color: unset;
+      display: inline-block;
+      h2 {
+        font-weight: bold;
+        margin-bottom: 0;
+      }
+    }
+    .navigation-subtitle {
+      margin: 0;
+      margin-top: -0.5rem;
     }
   }
-  #subtitle {
-    margin: 0;
-    margin-top: -0.5rem;
-  }
-  #hamburger-toggle {
+
+  .navigation-toggler {
     display: inline-block;
     margin-top: 1.2rem;
     font-size: 2.4rem;
     cursor: pointer;
   }
-  #navigation {
+
+  .navigation-bar {
     display: none;
-    nav {
+    div {
       display: flex;
       flex-direction: column;
       align-items: center;
-      p {
-        margin: 0;
-        display: inline-block;
+      .bar-item {
+        p {
+          display: inline-block;
+          margin: 0;
+        }
       }
-      .dot:last-child {
-        display: none;
+      .bar-dot {
+        margin-bottom: 0;
+        &:last-child {
+          display: none;
+        }
       }
     }
   }
+
 }
 
 // Body
