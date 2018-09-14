@@ -22,35 +22,37 @@
   }
 
   // Contact form
-  const subjectField = document.getElementById('subject-field');
-  const messageField = document.getElementById('message-field');
   const sendButton = document.getElementById('send-button');
-  sendButton.addEventListener('click', function() {
-    const subject = subjectField.value.trim();
-    const message = messageField.value.trim();
-    let valid = true;
-    if (subject === '') {
-      subjectField.classList.add('invalid');
-      valid = false;
-    }
-    if (message === '') {
-      messageField.classList.add('invalid');
-      valid = false;
-    }
-    if (valid) {
-      const mailString =
-        `mailto:chunkhang@gmail.com?subject=${subject}&body=${message}`;
-      const mailUrl = mailString
-        .replace(/ /g, '%20')
-        .replace(/\n/g, '%0A');
-      window.location.href = mailUrl;
-    }
-  });
-  subjectField.addEventListener('focus', function() {
-    this.classList.remove('invalid');
-  });
-  messageField.addEventListener('focus', function() {
-    this.classList.remove('invalid');
-  });
+  if (sendButton !== null) {
+    const subjectField = document.getElementById('subject-field');
+    const messageField = document.getElementById('message-field');
+    sendButton.addEventListener('click', function() {
+      const subject = subjectField.value.trim();
+      const message = messageField.value.trim();
+      let valid = true;
+      if (subject === '') {
+        subjectField.classList.add('invalid');
+        valid = false;
+      }
+      if (message === '') {
+        messageField.classList.add('invalid');
+        valid = false;
+      }
+      if (valid) {
+        const mailString =
+          `mailto:chunkhang@gmail.com?subject=${subject}&body=${message}`;
+        const mailUrl = mailString
+          .replace(/ /g, '%20')
+          .replace(/\n/g, '%0A');
+        window.location.href = mailUrl;
+      }
+    });
+    subjectField.addEventListener('focus', function() {
+      this.classList.remove('invalid');
+    });
+    messageField.addEventListener('focus', function() {
+      this.classList.remove('invalid');
+    });
+  }
 
 })();
