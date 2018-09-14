@@ -13,12 +13,12 @@
     <div>
       {% for item in site.data.navigation %}
         {% assign url = page.url | remove: 'index.html' %}
-        <div class="bar-item">
+        <div class="navigation-item">
           <a href="{{ item.link }}" {% if url == item.link %}class="current js-current"{% endif %}>
             <p>{{ item.name }}</p>
           </a>
         </div>
-        <span class="bar-dot">&middot;</span>
+        <span class="navigation-dot">&middot;</span>
       {% endfor %}
     </div>
     <hr>

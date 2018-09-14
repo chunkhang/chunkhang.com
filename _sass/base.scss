@@ -74,13 +74,13 @@ button {
       display: flex;
       flex-direction: column;
       align-items: center;
-      .bar-item {
+      .navigation-item {
         p {
           display: inline-block;
           margin: 0;
         }
       }
-      .bar-dot {
+      .navigation-dot {
         margin-bottom: 0;
         &:last-child {
           display: none;
@@ -97,23 +97,23 @@ button {
 }
 
 // Footer
-#footer {
+.site-footer {
   hr {
     margin-bottom: 0.5rem;
   }
-  ul {
+  .footer-bar {
     list-style-type: none;
     display: flex;
     justify-content: center;
     margin-bottom: 0;
-    li {
+    .footer-item {
       font-size: 2.8rem;
       margin-right: 1.5rem;
       margin-bottom: 0;
       &:last-child {
         margin-right: 0;
       }
-      a {
+      .footer-icon {
         color: unset;
       }
     }
