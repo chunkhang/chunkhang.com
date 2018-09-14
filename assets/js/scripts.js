@@ -16,7 +16,7 @@
   });
 
   // Disable current link
-  const currentLinks = document.getElementsByClassName('current');
+  const currentLinks = document.getElementsByClassName('js-current');
   for (let i = 0; i < currentLinks.length; i++) {
     currentLinks[i].removeAttribute('href');
   }

@@ -14,7 +14,7 @@
       {% for item in site.data.navigation %}
         {% assign url = page.url | remove: 'index.html' %}
         <div class="bar-item">
-          <a href="{{ item.link }}" {% if url == item.link %}class="current"{% endif %}>
+          <a href="{{ item.link }}" {% if url == item.link %}class="current js-current"{% endif %}>
             <p>{{ item.name }}</p>
           </a>
         </div>
