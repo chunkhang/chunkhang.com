@@ -22,10 +22,10 @@
   }
 
   // Contact form
-  const sendButton = document.getElementById('send-button');
+  const sendButton = document.getElementById('js-send');
   if (sendButton !== null) {
-    const subjectField = document.getElementById('subject-field');
-    const messageField = document.getElementById('message-field');
+    const subjectField = document.getElementById('js-subject');
+    const messageField = document.getElementById('js-message');
     sendButton.addEventListener('click', function() {
       const subject = subjectField.value.trim();
       const message = messageField.value.trim();

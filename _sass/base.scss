@@ -186,7 +186,12 @@ html {
 }
 
 // Contact page
-#message-field {
-  min-height: 10.5rem;
-  resize: vertical;
+.form {
+  .form-group {
+    margin-bottom: 0;
+    textarea {
+      min-height: 10.5rem;
+      resize: vertical;
+    }
+  }
 }

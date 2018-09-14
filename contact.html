@@ -3,12 +3,16 @@ title: Contact
 ---
 
 <h1>Contact</h1>
-<form onsubmit="return false;">
-  <fieldset>
-    <label for="subject-field">Subject</label>
-    <input placeholder="Hello Marcus" id="subject-field" type="text" tabindex="1">
-    <label for="message-field">Message</label>
-    <textarea placeholder="Would you like to have tea one fine day?" id="message-field" tabindex="2"></textarea>
-    <button id="send-button" type="button" tabindex="3">Send</button>
+<form onsubmit="return false;" class="form">
+  <fieldset class="form-group">
+    <label for="subject-field" class="form-label">Subject</label>
+    <input placeholder="Hello Marcus" class="form-control" id="js-subject" type="text" tabindex="1">
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="message-field" class="form-label">Message</label>
+    <textarea placeholder="Would you like to have tea one fine day?" class="form-control" id="js-message" tabindex="2"></textarea>
+  </fieldset>
+  <fieldset class="form-group">
+    <button id="js-send" type="button" tabindex="3">Send</button>
   </fieldset>
 </form>
