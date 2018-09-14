@@ -1,39 +1,41 @@
 @import "magic";
 
+// Global
 html {
   font-size: 55%;
-}
 
-a {
-  color: $green;
-  &:hover, &:focus, &:active {
-    color: unset;
+  a {
+    color: $green;
+    &:hover, &:focus, &:active {
+      color: unset;
+    }
   }
-}
 
-hr {
-  margin: 1.2rem auto;
-  border-top-width: 0.25rem;
-  width: 25rem;
-}
+  hr {
+    margin: 1.2rem auto;
+    border-top-width: 0.25rem;
+    width: 25rem;
+  }
 
-input[type="text"]:focus, textarea:focus {
-  border-color: $green;
-}
+  input[type="text"]:focus, textarea:focus {
+    border-color: $green;
+  }
 
-button {
-  margin-bottom: 0;
-  background-color: $green;
-  border-color: $green;
-}
+  button {
+    margin-bottom: 0;
+    background-color: $green;
+    border-color: $green;
+  }
 
-.current {
-  color: unset;
-  cursor: default;
-}
+  .current {
+    color: unset;
+    cursor: default;
+  }
 
-.invalid {
-  border-color: $red !important;
+  .invalid {
+    border-color: $red !important;
+  }
+
 }
 
 // Container
