@@ -174,15 +174,15 @@ html {
 }
 
 // Blog post
-#post-title {
+.post-title {
   margin-bottom: 0.25rem;
   font-weight: bold;
   line-height: 1;
 }
-#post-date {
+.post-date {
   margin-bottom: 2.5rem;
 }
-#post-content {
+.post-content {
   p {
     margin-bottom: 2rem;
   }
