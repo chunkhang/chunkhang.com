@@ -145,30 +145,30 @@ html {
 }
 
 // Blog index
-#blog-post-list {
+.blog-list {
   list-style: none;
-  h3 {
+  .blog-title {
     margin-bottom: 0;
     font-weight: bold;
   }
-  h6 {
+  .blog-date {
     margin-bottom: 0.5rem;
     margin-top: -0.25rem;
   }
-  .excerpt {
+  .blog-excerpt {
     font-size: 1.5rem;
     p {
       margin: 0 3rem;
     }
   }
 }
-#blog-page-navigation {
+.blog-navigation {
   list-style: none;
   display: flex;
   justify-content: center;
   margin-bottom: 0;
   font-size: 1.75rem;
-  li:not(:last-child) {
+  .blog-navigation-item:not(:last-child) {
     margin-right: 2rem;
   }
 }
