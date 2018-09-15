@@ -147,21 +147,21 @@ html {
 // Blog index
 .blog-list {
   list-style: none;
-  .blog-title {
-    margin-bottom: 0;
-    font-weight: bold;
-  }
-  .blog-date {
-    margin-bottom: 0.5rem;
-    margin-top: -0.25rem;
-    line-height: 1.4;
-    letter-spacing: 0;
-    display: block;
-  }
-  .blog-excerpt {
-    font-size: 1.5rem;
-    p {
-      margin: 0 3rem;
+  .blog-item {
+    .blog-title {
+      margin-bottom: 0;
+      font-weight: bold;
+    }
+    .blog-meta {
+      opacity: 0.65;
+      margin-top: -0.5rem;
+      margin-bottom: 0.25rem;
+    }
+    .blog-excerpt {
+      font-size: 1.5rem;
+      p {
+        margin: 0 3rem;
+      }
     }
   }
 }

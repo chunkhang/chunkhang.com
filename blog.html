@@ -9,9 +9,13 @@ pagination:
 <!-- Post list-->
 <ul class="blog-list">
   {% for post in paginator.posts %}
-    <li>
-      <h3 class="blog-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      <time class="blog-date">{{ post.date | date: '%B %d, %Y' }}</time>
+    <li class="blog-item">
+      <header class="blog-header">
+        <h3 class="blog-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <div class="blog-meta">
+          <time class="blog-date">{{ post.date | date: '%B %d, %Y' }}</time>
+        </div>
+      </header>
       <div class="blog-excerpt clearfix">
         <i class="fas fa-quote-left"></i>
         <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
