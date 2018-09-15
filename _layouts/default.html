@@ -14,15 +14,15 @@
 </head>
 <body>
   <div class="container site">
-    <header class="row site-header">
+    <header class="row site-header" role="banner">
       <div class="column">
         {% include header.html %}
       </div>
     </header>
     <div class="row site-body">
-      <div class="column">
+      <main class="column" aria-label="Content">
         {{ content }}
-      </div>
+      </main>
     </div>
     <footer class="row site-footer">
       <div class="column">
