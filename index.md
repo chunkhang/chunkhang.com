@@ -6,6 +6,9 @@ title: Home
 # Hello World
 {: .page-title }
 
+![Marcus Mu](/assets/images/marcus-mu.jpg)
+{: .introduction}
+
 I am **Marcus Mu**, a tea-loving programmer with diverse interests. I am a Bachelor of **Computer Science** currently residing in Selangor, **Malaysia**. My passions include coding, music, martial arts, sports, design and many more. Most importantly, I prefer **tea** over coffee, unless I need that extra energy.
 {: .introduction }
 
