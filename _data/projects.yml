@@ -7,7 +7,7 @@
   tags: web addon vue javascript
   link: http://github.com/chunkhang/tabo
 - name: Propel
-  description: Propel your commit because you can
+  description: Shell script for pushing commits
   tags: console script homebrew shell
   link: http://github.com/chunkhang/homebrew-propel
 - name: Console Snake
@@ -23,11 +23,11 @@
   tags: web game phaser javascript
   link: http://github.com/chunkhang/first-phaser
 - name: JS Snake
-  description: A basic snake game coded using pure JavaScript
+  description: Snake game with JavaScript
   tags: web game javascript
   link: http://github.com/chunkhang/js-snake
-- name: No Fap Challenge Counter
-  description: A console-based day counter for the No Fap Challenge
+- name: No Fap Counter
+  description: Day counter for No Fap Challenge
   tags: console application python
   link: http://github.com/chunkhang/no-fap-counter
 - name: Bogosort
@@ -35,10 +35,10 @@
   tags: console script python
   link: http://github.com/chunkhang/bogosort
 - name: Tempus
-  description: Tempus est de essentia
+  description: Timer application for console
   tags: console application click python
-  link: http://github.com/chunkhang/tempus/tree/master/tempus
+  link: http://github.com/chunkhang/tempus
 - name: Clivia
-  description: A library for simple CLI development in Python
+  description: A library for CLI development
   tags: console library python
   link: http://github.com/chunkhang/clivia

@@ -156,7 +156,7 @@ html {
       font-weight: bold;
     }
     .blog-meta {
-      opacity: 0.65;
+      opacity: $blur;
       margin-top: -0.5rem;
       margin-bottom: 0.25rem;
     }
@@ -196,6 +196,39 @@ html {
   .post-content {
     p {
       margin-bottom: 2rem;
+    }
+  }
+}
+
+// Projects page
+.project-list {
+  list-style: none;
+  .project-item {
+    float: left;
+    width: 50%;
+    margin-bottom: 2rem;
+    padding-right: 0.2rem;
+    .project-name {
+      margin-bottom: 0;
+      font-weight: bold;
+    }
+    .project-description {
+      margin-top: -0.25rem;
+      margin-bottom: 0;
+      line-height: 1.2;
+    }
+    .project-tags {
+      list-style: none;
+      margin: 0;
+      font-size: 1.35rem;
+      li {
+        display: inline;
+        margin: 0;
+        opacity: $blur;
+        &:not(:last-child):after {
+          content: ' /';
+        }
+      }
     }
   }
 }
