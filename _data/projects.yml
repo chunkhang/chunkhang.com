@@ -1,0 +1,44 @@
+- name: Dotfiles
+  description: All my precious dotfiles
+  tags: console script vim shell
+  link: http://github.com/chunkhang/dotfiles
+- name: Tabo
+  description: A minimalistic tab manager
+  tags: web addon vue javascript
+  link: http://github.com/chunkhang/tabo
+- name: Propel
+  description: Propel your commit because you can
+  tags: console script homebrew shell
+  link: http://github.com/chunkhang/homebrew-propel
+- name: Console Snake
+  description: Snake for console
+  tags: console game curses python
+  link: http://github.com/chunkhang/console-snake
+- name: Minesweeper
+  description: Minesweeper for console
+  tags: console game python
+  link: http://github.com/chunkhang/minesweeper
+- name: First Phaser
+  description: My first Phaser game
+  tags: web game phaser javascript
+  link: http://github.com/chunkhang/first-phaser
+- name: JS Snake
+  description: A basic snake game coded using pure JavaScript
+  tags: web game javascript
+  link: http://github.com/chunkhang/js-snake
+- name: No Fap Challenge Counter
+  description: A console-based day counter for the No Fap Challenge
+  tags: console application python
+  link: http://github.com/chunkhang/no-fap-counter
+- name: Bogosort
+  description: In bogo we trust
+  tags: console script python
+  link: http://github.com/chunkhang/bogosort
+- name: Tempus
+  description: Tempus est de essentia
+  tags: console application click python
+  link: http://github.com/chunkhang/tempus/tree/master/tempus
+- name: Clivia
+  description: A library for simple CLI development in Python
+  tags: console library python
+  link: http://github.com/chunkhang/clivia
