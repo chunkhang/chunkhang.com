@@ -4,4 +4,20 @@ title: Projects
 ---
 
 <h1 class="page-title">Projects</h1>
-
+<ul class="project-list">
+  {% for project in site.data.projects %}
+    <li class="project-item">
+      <h3 class="project-name">
+        <a href="{{ project.link }}" target="_blank">{{ project.name }}</a>
+      </h3>
+      <div class="project-meta">
+        <ul class="project-tags">
+          {% for tag in project.tags %}
+            <li>{{ tag }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <p class="project-description">{{ project.description }}</p>
+    </li>
+  {% endfor %}
+</ul>
