@@ -55,4 +55,41 @@
     });
   }
 
+  // Project cloud
+  const cloud = document.getElementById('js-cloud');
+  if (cloud !== null) {
+    const projects = document.getElementsByClassName('js-projects');
+    const tags = document.getElementsByClassName('js-tags');
+    const cloudWords = cloud.children;
+    Array.from(cloudWords).forEach(function(cloudWord) {
+      cloudWord.addEventListener('click', function() {
+        Array.from(projects).forEach(function(project) {
+          project.classList.add('hide');
+        });
+        Array.from(tags).forEach(function(tag) {
+          tag.classList.remove('active');
+        });
+        if (!this.classList.contains('active')) {
+          const keyword = this.textContent;
+          Array.from(cloudWords).forEach(function(item) {
+            item.classList.remove('active');
+          });
+          this.classList.add('active');
+          Array.from(tags).forEach(function(tag) {
+            if (tag.textContent === keyword) {
+              const project = tag.parentNode.parentNode.parentNode;
+              project.classList.remove('hide');
+              tag.classList.add('active');
+            }
+          });
+        } else {
+          this.classList.remove('active');
+          Array.from(projects).forEach(function(project) {
+            project.classList.remove('hide');
+          });
+        }
+      });
+    });
+  }
+
 })();
