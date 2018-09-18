@@ -13,9 +13,17 @@
     <hr>
     <div>
       {% for item in site.data.navigation %}
-        {% assign url = page.url | remove: 'index.html' | append: '@' | remove: '/@' %}
+        {% comment %}
+          Get url of current page without trailing slash
+        {% endcomment %}
+        {% assign url = page.url | remove: 'index.html' %}
+        {% if url == '/' %}
+          {% assign page_url = url %}
+        {% else %}
+          {% assign page_url = url | append: '@' | remove: '/@' %}
+        {% endif %}
         <div class="navigation-item">
-          <a href="{{ item.link }}" {% if url == item.link %}class="current js-current"{% endif %}>
+          <a href="{{ item.link }}" {% if page_url == item.link %}class="current js-current"{% endif %}>
             <p>{{ item.name }}</p>
           </a>
         </div>
