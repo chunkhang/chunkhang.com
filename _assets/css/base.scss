@@ -27,6 +27,10 @@ html {
     border-color: $green;
   }
 
+  blockquote {
+    border-left-color: $green;
+  }
+
   .current {
     color: unset;
     cursor: default;

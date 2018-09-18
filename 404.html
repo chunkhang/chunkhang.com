@@ -1,0 +1,22 @@
+---
+layout: default
+title: Tea Not Found
+---
+
+<h1 class="page-title">Tea Not Found</h1>
+<h4>It seems like you have stumbled upon <strong>Error 404</strong>. Here is a random cat fact:</h4>
+<blockquote><h5 id="js-fact">Searching...</h5></blockquote>
+<script>
+  const factBox = document.getElementById('js-fact');
+  const url = 'https://cors.io/?https://catfact.ninja/fact';
+  const request = new XMLHttpRequest();
+  request.onreadystatechange = function() {
+     if (this.readyState === 4 && this.status === 200) {
+        const response = JSON.parse(this.responseText);
+        const randomFact = response.fact;
+        factBox.textContent = randomFact;
+     }
+  }
+  request.open('GET', url, true);
+  request.send();
+</script>
