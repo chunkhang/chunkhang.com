@@ -13,7 +13,7 @@
     <hr>
     <div>
       {% for item in site.data.navigation %}
-        {% assign url = page.url | remove: 'index.html' %}
+        {% assign url = page.url | remove: 'index.html' | append: '@' | remove: '/@' %}
         <div class="navigation-item">
           <a href="{{ item.link }}" {% if url == item.link %}class="current js-current"{% endif %}>
             <p>{{ item.name }}</p>
