@@ -21,9 +21,6 @@ pagination:
     before: 2
     after: 2
 
-sass:
-  style: compressed
-
 exclude:
   - Gemfile
   - Gemfile.lock
