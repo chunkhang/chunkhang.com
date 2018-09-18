@@ -21,6 +21,10 @@ pagination:
     before: 2
     after: 2
 
+assets:
+  compress:
+    js: uglifier
+
 exclude:
   - Gemfile
   - Gemfile.lock
