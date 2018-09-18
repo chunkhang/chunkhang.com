@@ -12,7 +12,8 @@ title: Projects
       </h3>
       <div class="project-meta">
         <ul class="project-tags">
-          {% for tag in project.tags %}
+          {% assign tags = project.tags | split: ' ' %}
+          {% for tag in tags %}
             <li>{{ tag }}</li>
           {% endfor %}
         </ul>
