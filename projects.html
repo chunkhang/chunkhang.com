@@ -23,6 +23,7 @@ title: Projects
           {% assign tags = project.tags | split: ' ' %}
           {% for tag in tags %}
             <li class="js-tags">{{ tag }}</li>
+            <span class="project-slash">/</span>
           {% endfor %}
         </ul>
       </div>

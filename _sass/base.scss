@@ -245,13 +245,13 @@ html {
       list-style: none;
       margin: 0;
       font-size: 1.4rem;
-      li {
+      li, .project-slash {
         display: inline;
         margin: 0;
         opacity: $blur;
-        &:not(:last-child):after {
-          content: ' /';
-        }
+      }
+      .project-slash:last-child {
+        display: none;
       }
     }
   }
