@@ -1,0 +1,63 @@
+.project-cloud {
+  list-style: none;
+  margin-top: -0.5rem;
+  margin-bottom: 2rem;
+  li {
+    display: inline;
+    margin-bottom: 0;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    color: $green;
+    opacity: $blur;
+  }
+}
+.project-list {
+  list-style: none;
+  .project-item {
+    margin-bottom: 2rem;
+    padding-right: 0.2rem;
+    .project-name {
+      margin-bottom: 0;
+      font-weight: bold;
+    }
+    .project-description {
+      margin-top: -0.25rem;
+      margin-bottom: 0;
+      line-height: 1.2;
+    }
+    .project-tags {
+      list-style: none;
+      margin: 0;
+      font-size: 1.4rem;
+      li, .project-slash {
+        display: inline;
+        margin: 0;
+        opacity: $blur;
+      }
+      .project-slash:last-child {
+        display: none;
+      }
+    }
+  }
+}
+
+@include for-tablet-portrait-up {
+
+  .project-list {
+    .project-item {
+      float: left;
+      width: 50%;
+    }
+  }
+
+}
+
+@include for-desktop-up {
+
+  .project-cloud {
+    li:hover {
+      opacity: 1;
+    }
+  }
+
+}

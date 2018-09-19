@@ -1,0 +1,50 @@
+html {
+  font-size: 55%;
+}
+
+a {
+  color: $green;
+  &:hover, &:focus, &:active {
+    color: unset;
+  }
+}
+
+hr {
+  margin: 1.2rem auto;
+  border-top-width: 0.25rem;
+  width: 25rem;
+}
+
+input[type="text"]:focus, textarea:focus {
+  border-color: $green;
+}
+
+button {
+  margin-bottom: 0;
+  background-color: $green;
+  border-color: $green;
+}
+
+blockquote {
+  border-left-color: $green;
+}
+
+@include for-tablet-portrait-up {
+
+  html {
+    font-size: 58.5%;
+  }
+
+  hr {
+    width: 50rem;
+  }
+
+}
+
+@include for-tablet-landscape-up {
+
+  html {
+    font-size: 62.5%;
+  }
+
+}

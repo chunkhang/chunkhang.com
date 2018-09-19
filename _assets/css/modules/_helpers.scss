@@ -1,0 +1,17 @@
+.current {
+  color: unset;
+  cursor: default;
+}
+
+.invalid {
+  border-color: $red !important;
+}
+
+.active {
+  font-weight: bold;
+  opacity: 1 !important;
+}
+
+.hide {
+  display: none;
+}

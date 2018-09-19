@@ -1,5 +1,19 @@
 ---
 ---
 
-@import "base";
-@import "responsive";
+// Base
+@import "base/all";
+
+// Modules
+@import "modules/global";
+@import "modules/helpers";
+
+// Layouts
+@import "layouts/default";
+@import "layouts/post";
+
+// Pages
+@import "pages/home";
+@import "pages/blog";
+@import "pages/projects";
+@import "pages/contact";

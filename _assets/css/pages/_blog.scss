@@ -1,0 +1,30 @@
+.blog-list {
+  list-style: none;
+  .blog-item {
+    .blog-title {
+      margin-bottom: 0;
+      font-weight: bold;
+    }
+    .blog-meta {
+      opacity: $blur;
+      margin-top: -0.5rem;
+      margin-bottom: 0.25rem;
+    }
+    .blog-excerpt {
+      font-size: 1.5rem;
+      p {
+        margin: 0 3rem;
+      }
+    }
+  }
+}
+.blog-navigation {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  font-size: 1.75rem;
+  .blog-navigation-item:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
