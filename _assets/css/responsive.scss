@@ -23,6 +23,7 @@
 
 @include for-tablet-portrait-up {
 
+  // Global
   html {
     font-size: 58.5%;
 
@@ -32,6 +33,7 @@
 
   }
 
+  // Header
   .site-header {
     .navigation-toggler {
       display: none;
@@ -51,6 +53,7 @@
     }
   }
 
+  // Projects page
   .project-list {
     .project-item {
       float: left;
@@ -62,8 +65,20 @@
 
 @include for-tablet-landscape-up {
 
+  // Global
   html {
     font-size: 62.5%;
+  }
+
+}
+
+@include for-desktop-up {
+
+  // Projects page
+  .project-cloud {
+    li:hover {
+      opacity: 1;
+    }
   }
 
 }

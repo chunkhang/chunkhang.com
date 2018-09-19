@@ -225,9 +225,6 @@ html {
     cursor: pointer;
     color: $green;
     opacity: $blur;
-    &:hover {
-      opacity: 1;
-    }
   }
 }
 .project-list {
