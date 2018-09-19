@@ -4,6 +4,7 @@ url: "http://chunkhang.com"
 
 plugins:
   - jekyll-paginate-v2
+  - jekyll-assets
 
 permalink: pretty
 
@@ -23,8 +24,6 @@ pagination:
 
 assets:
   gzip: true
-  compress:
-    js: uglifier
 
 exclude:
   - Gemfile

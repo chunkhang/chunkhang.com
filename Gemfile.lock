@@ -122,6 +122,7 @@ DEPENDENCIES
   jekyll-compose
   jekyll-paginate-v2
   jekyll-seo-tag
+  sass
   uglifier
 
 BUNDLED WITH

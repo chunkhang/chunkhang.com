@@ -2,6 +2,7 @@
 source 'https://rubygems.org'
 
 gem 'jekyll', '3.8.3'
+gem 'sass'
 gem 'uglifier'
 gem 'image_optim'
 gem 'image_optim_pack'
