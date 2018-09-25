@@ -13,3 +13,7 @@ layout: default
     {{ content }}
   </div>
 </article>
+{% if page.comments %}
+  {% assign permalink = site.url | append: page.url %}
+  {% include disqus.html page_url=permalink %}
+{% endif %}

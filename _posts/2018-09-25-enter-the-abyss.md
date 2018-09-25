@@ -2,6 +2,7 @@
 layout: post
 title: Enter the Abyss
 date: 2018-09-25 14:45 +0800
+comments: true
 ---
 
 Time really flies. Before I knew it, I have graduated from Sunway University
