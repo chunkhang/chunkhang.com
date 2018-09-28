@@ -22,9 +22,6 @@ pagination:
     before: 2
     after: 2
 
-jekyll_compose:
-  auto_open: true
-
 exclude:
   - Gemfile
   - Gemfile.lock
