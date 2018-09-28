@@ -38,10 +38,10 @@ unforgiving ocean, lest he or she wishes to drown.
 
 Entering the abyss is undoubtedly terrifying. I just need a little optimism I
 learned from university as I dive deeper and deeper into the inky void. Of
-course, I also want something I could cling onto. Thus, I decided to build
-this website from scratch. My website would host my blog where I could scribble
-my thoughts and feelings from time to time. I could showcase the various
-projects I find myself working on. Also, this is where I would place my resume.
-In essence, I am taking my first step in the unknown. I know, five years from
-now, my life would be unimaginably different, as it was five years ago. All I
-can do is keep waddling in the boundless abyss.
+course, I also want something I could cling onto. Thus, I decided to build this
+website from scratch. My website would host my blog where I could scribble my
+thoughts and feelings from time to time. I could showcase the various projects
+I find myself working on. Also, this is where I would place my resume. In
+essence, I am taking my first step in the unknown. I know, five years from now,
+my life would be unimaginably different, as it was five years ago. All I can do
+is keep waddling in the boundless abyss.
