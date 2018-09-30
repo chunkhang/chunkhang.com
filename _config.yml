@@ -5,6 +5,7 @@ url: "http://chunkhang.com"
 plugins:
   - jekyll-paginate-v2
   - jekyll-assets
+  - jekyll-feed
 
 permalink: pretty
 
