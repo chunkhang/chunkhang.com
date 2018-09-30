@@ -61,22 +61,22 @@ Take note of the `div` that wraps the `iframe` . The `div` should have a wrapper
 
 ### Stylesheet
 
-Add the following to your stylesheet:
+Then, add the rules below to any CSS file like `assets/css/styles.css`. Make sure you do the necessary [linking](https://teamtreehouse.com/community/htmlcss-linking).
 
-```scss
+```css
 .youtube-wrapper {
   position: relative;
   width: 100%;
   height: 0;
   padding-bottom: 56.25%;
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
+}
+.youtube-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 ```
 
@@ -84,7 +84,7 @@ The detailed explanation for how the CSS works can found [here](https://alistapa
 
 ### Markdown File
 
-We can now update `_posts/nyan-cat.md` to use the partial HTML from above:
+Now, update `_posts/nyan-cat.md` to use the partial HTML from above:
 
 ```liquid
 ---
