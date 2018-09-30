@@ -31,10 +31,9 @@ blockquote {
 
 pre {
   border: none;
-}
-
-code {
-  background: none;
+  code {
+    background: none;
+  }
 }
 
 @include for-tablet-portrait-up {
