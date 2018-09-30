@@ -99,6 +99,6 @@ In this case, we pass in `QH2-TGUlwu4` as the `id` for the partial. This `id` ca
 
 ### Responsive Video
 
-Finally, we get a responsive embedded YouTube video on our blog post. This time, the video is fluid in width, but retains it aspect ratio perfectly. We can even resize the browser window to witness it in action. Below is the example of the responsive video.
+Finally, we get a responsive embedded YouTube video on our blog post. This time, the video is fluid in width, but retains its aspect ratio perfectly. We can even resize the browser window to witness it in action. Below is the example of the responsive video.
 
 {% include youtube.html id='QH2-TGUlwu4' %}
