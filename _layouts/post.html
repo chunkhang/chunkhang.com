@@ -7,6 +7,8 @@ layout: default
     <h2 class="post-title" itemprop="name headline">{{ page.title }}</h2>
     <div class="post-meta">
       <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%B %d, %Y' }}</time>
+      <span class="post-dot">&middot;</span>
+      <span class="post-type">{{ page.type | capitalize }}</span>
     </div>
   </header>
   <div class="post-content" itemprop="articleBody">
