@@ -2,6 +2,8 @@
 source 'https://rubygems.org'
 
 gem 'jekyll', '3.8.3'
+gem 'kramdown'
+gem 'rouge'
 gem 'sass'
 gem 'uglifier'
 gem 'image_optim'

@@ -122,6 +122,8 @@ DEPENDENCIES
   jekyll-compose
   jekyll-paginate-v2
   jekyll-seo-tag
+  kramdown
+  rouge
   sass
   uglifier
 

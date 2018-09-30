@@ -25,8 +25,16 @@ button {
   border-color: $green;
 }
 
-blockquote, pre {
+blockquote {
   border-left-color: $green;
+}
+
+pre {
+  border: none;
+}
+
+code {
+  background: none;
 }
 
 @include for-tablet-portrait-up {

@@ -9,7 +9,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} - Marcus Mu</title>
   {% include favicon.html favicon_version='1' %}
-  {% include css.html %}
+  {% include vendor.html %}
+  {% asset styles.css %}
   {% seo %}
 </head>
 <body>
@@ -30,6 +31,6 @@
       </div>
     </footer>
   </div>
-  {% include js.html %}
+  {% asset scripts.js %}
 </body>
 </html>
