@@ -2,6 +2,7 @@
 layout: post
 title: Responsive YouTube Video with Jekyll
 date: 2018-09-30 20:46 +0800
+type: technical
 ---
 
 At some point, we need to embed a YouTube video onto our blog post. Using [Jekyll](https://jekyllrb.com/) as our static site generator, the most straightforward way to do that is to grab the embed code from YouTube. For the purpose of this article, let us use this [video](https://www.youtube.com/watch?v=QH2-TGUlwu4) of Nyan Cat.
