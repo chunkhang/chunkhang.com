@@ -9,7 +9,15 @@
     margin-bottom: 2rem;
   }
   .post-content {
-    p {
+    p, h1, h2, h3, h4, h5, h6 {
+      margin-bottom: 2rem;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: bold;
+      line-height: 1;
+      margin-bottom: 1.5rem;
+    }
+    iframe {
       margin-bottom: 2rem;
     }
   }

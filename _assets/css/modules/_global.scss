@@ -29,6 +29,14 @@ blockquote {
   border-left-color: $green;
 }
 
+code {
+  font-family: 'Fira Mono', monospace;
+  font-size: 84%;
+  padding: 0.35rem 0.5rem;
+  border-radius: unset;
+  background: $gray;
+}
+
 pre {
   border: none;
   code {
