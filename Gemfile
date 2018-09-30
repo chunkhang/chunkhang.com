@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 source 'https://rubygems.org'
 
-gem 'jekyll', '3.8.3'
+gem 'jekyll', '~>3.8.4'
 gem 'kramdown'
 gem 'rouge'
 gem 'sass'
