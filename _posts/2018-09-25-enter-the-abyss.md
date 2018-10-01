@@ -3,6 +3,7 @@ layout: post
 title: Enter the Abyss
 date: 2018-09-25 14:45 +0800
 category: personal
+tags: graduation university adulthood
 ---
 
 Time really flies. Before I knew it, I have graduated from Sunway University with a Bachelor's Degree in Computer Science. "Five years spent in this one place all but amounted to a single piece of paper I'm now holding," I thought to myself. The official transcript in my hand, I began recollecting the first day I set foot into university, back in the year 2013.

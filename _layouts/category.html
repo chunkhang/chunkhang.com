@@ -3,6 +3,21 @@ layout: default
 ---
 
 <h1 class="category-title">{{ page.title }}</h1>
-{% for post in site.categories[page.tag] %}
-  {{ post.title }}
-{% endfor %}
+<ul class="category-tag-list">
+  {% assign category = page.tag %}
+  {% assign sorted_tags = site.tags | sort %}
+  {% for tag in sorted_tags %}
+    <li class="category-tag-item">
+      {{ tag[0] }}
+      <ul class="category-tag-post-list">
+        {% for post in site.categories[category] %}
+          {% if post.tags contains tag[0] %}
+            <li class="category-tag-post-item">
+              {{ post.title }}
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </li>
+  {% endfor %}
+</ul>
