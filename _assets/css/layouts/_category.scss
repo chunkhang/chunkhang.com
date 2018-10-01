@@ -12,13 +12,23 @@
       font-size: 100%;
       .tag-post-item {
         margin: 0;
+        margin-bottom: 1rem;
         list-style-position: initial;
+        line-height: 1;
         .tag-post-meta {
-          display: inline;
           opacity: $blur;
           font-size: 1.3rem;
+          margin-top: 0.5rem;
         }
       }
     }
   }
+}
+
+@include for-tablet-portrait-up {
+
+  .tag-post-meta {
+    display: inline;
+  }
+
 }
