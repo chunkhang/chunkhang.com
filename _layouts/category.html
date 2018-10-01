@@ -3,15 +3,18 @@ layout: default
 ---
 
 <h1 class="category-title">{{ page.title }}</h1>
+{% assign page_category = page.tag %}
+{% assign all_posts = site.categories[page_category] %}
+{% assign all_tags = all_posts | map: 'tags' %}
+{% assign tag_cloud = all_tags | uniq | sort %}
+{% include cloud.html tags=tag_cloud class='category-tag-cloud' id='js-category-cloud' %}
 <ul class="category-tag-list">
-  {% assign category = page.tag %}
-  {% assign sorted_tags = site.tags | sort %}
-  {% for tag in sorted_tags %}
+  {% for tag in tag_cloud %}
     <li class="category-tag-item">
-      {{ tag[0] }}
+      <h3>{{ tag }}</h3>
       <ul class="category-tag-post-list">
-        {% for post in site.categories[category] %}
-          {% if post.tags contains tag[0] %}
+        {% for post in all_posts %}
+          {% if post.tags contains tag %}
             <li class="category-tag-post-item">
               {{ post.title }}
             </li>

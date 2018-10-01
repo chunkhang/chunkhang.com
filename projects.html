@@ -4,13 +4,9 @@ title: Projects
 ---
 
 <h1 class="page-title">Projects</h1>
-<ul class="project-cloud" id="js-cloud">
-  {% assign all_tags = site.data.projects | map: 'tags' | join | split: ' ' %}
-  {% assign tag_cloud = all_tags | uniq | sort %}
-  {% for tag in tag_cloud %}
-    <li>{{ tag }}</li>
-  {% endfor %}
-</ul>
+{% assign all_tags = site.data.projects | map: 'tags' | join | split: ' ' %}
+{% assign tag_cloud = all_tags | uniq | sort %}
+{% include cloud.html tags=tag_cloud class='project-cloud' id='js-project-cloud' %}
 <ul class="project-list">
   {% for project in site.data.projects %}
     <li class="project-item js-projects">
