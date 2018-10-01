@@ -61,6 +61,22 @@ pre {
   }
 }
 
+.tags {
+  list-style: none;
+  margin: 0;
+  font-size: 1.4rem;
+  li {
+    display: inline;
+    margin: 0;
+  }
+  .slash {
+    color: $green;
+    &:last-child {
+      display: none;
+    }
+  }
+}
+
 @include for-tablet-portrait-up {
 
   html {

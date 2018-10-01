@@ -22,20 +22,7 @@
       }
     }
     .blog-tags {
-      list-style: none;
-      margin: 0;
       margin-top: 0.25rem;
-      font-size: 1.4rem;
-      li {
-        display: inline;
-        margin: 0;
-      }
-      .blog-slash {
-        color: $green;
-        &:last-child {
-          display: none;
-        }
-      }
     }
   }
 }
