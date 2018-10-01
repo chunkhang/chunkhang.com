@@ -8,7 +8,7 @@ layout: default
     <div class="post-meta">
       <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%B %d, %Y' }}</time>
       <span class="post-dot">&middot;</span>
-      <span class="post-category">{{ page.category }}</span>
+      <span class="post-category">{{ page.category | capitalize }}</span>
     </div>
   </header>
   <div class="post-content" itemprop="articleBody">

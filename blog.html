@@ -17,7 +17,7 @@ pagination:
         <div class="blog-meta">
           <time class="blog-date">{{ post.date | date: '%B %d, %Y' }}</time>
           <span class="blog-dot">&middot;</span>
-          <span class="blog-category">{{ post.category }}</span>
+          <span class="blog-category">{{ post.category | capitalize }}</span>
         </div>
       </header>
       <div class="blog-excerpt clearfix">

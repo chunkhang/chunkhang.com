@@ -1,0 +1,8 @@
+---
+layout: default
+---
+
+<h1 class="category-title">{{ page.tag | capitalize }}</h1>
+{% for post in site.categories[page.tag] %}
+  {{ post.title }}
+{% endfor %}
