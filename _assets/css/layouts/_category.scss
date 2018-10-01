@@ -1,0 +1,24 @@
+.tag-list {
+  list-style: none;
+  .tag-item {
+    margin-bottom: 2rem;
+    .tag-name {
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .tag-post-list {
+      margin: 0;
+      margin-left: 2.2rem;
+      font-size: 100%;
+      .tag-post-item {
+        margin: 0;
+        list-style-position: initial;
+        .tag-post-meta {
+          display: inline;
+          opacity: $blur;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
