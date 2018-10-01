@@ -40,7 +40,7 @@ title: Nyan Cat
 
 ### Non-Responsive Video
 
-Unfortunately, the video turns out in a fixed width and height. It does not follow the full width of its parent container. On a desktop, it still looks fine, albeit not the as wide as it should be. On mobile, however, it looks absolutely horrendous. The video's width overflows that of its container. Below is the example of the non-responsive embedded video.
+Unfortunately, the video turns out in a fixed width and height. It does not follow the full width of its parent container. On a desktop, it still looks fine, albeit not as wide as it should be. On mobile, however, it looks absolutely horrendous. The video's width overflows that of its container. Below is the example of the non-responsive embedded video.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QH2-TGUlwu4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
