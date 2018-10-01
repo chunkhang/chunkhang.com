@@ -4,7 +4,7 @@ title: Projects
 ---
 
 <h1 class="page-title">Projects</h1>
-<ul class="project-cloud" id="js-cloud">
+<ul class="project-cloud cloud" id="js-project-cloud">
   {% assign all_tags = site.data.projects | map: 'tags' | join | split: ' ' %}
   {% assign tag_cloud = all_tags | uniq | sort %}
   {% for tag in tag_cloud %}

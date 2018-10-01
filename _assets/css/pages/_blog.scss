@@ -1,6 +1,7 @@
 .blog-list {
   list-style: none;
   .blog-item {
+    margin-bottom: 2.5rem;
     .blog-title {
       margin-bottom: 0;
       font-weight: bold;
@@ -8,15 +9,20 @@
       margin-bottom: 0.5rem;
     }
     .blog-meta {
-      opacity: $blur;
       margin-top: -0.5rem;
       margin-bottom: 0.25rem;
+      .blog-date {
+        opacity: $blur;
+      }
     }
     .blog-excerpt {
       font-size: 1.5rem;
       p {
-        margin: 0 3rem;
+        margin: 0;
       }
+    }
+    .blog-tags {
+      margin-top: 0.25rem;
     }
   }
 }

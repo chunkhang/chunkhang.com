@@ -47,6 +47,36 @@ pre {
   }
 }
 
+.cloud {
+  list-style: none;
+  margin-top: -0.5rem;
+  margin-bottom: 2rem;
+  li {
+    display: inline;
+    margin-bottom: 0;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    color: $green;
+    opacity: $blur;
+  }
+}
+
+.tags {
+  list-style: none;
+  margin: 0;
+  font-size: 1.4rem;
+  li {
+    display: inline;
+    margin: 0;
+  }
+  .slash {
+    color: $green;
+    &:last-child {
+      display: none;
+    }
+  }
+}
+
 @include for-tablet-portrait-up {
 
   html {
@@ -63,6 +93,16 @@ pre {
 
   html {
     font-size: 62.5%;
+  }
+
+}
+
+@include for-desktop-up {
+
+  .cloud {
+    li:hover {
+      opacity: 1;
+    }
   }
 
 }

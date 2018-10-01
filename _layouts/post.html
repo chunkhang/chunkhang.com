@@ -8,12 +8,20 @@ layout: default
     <div class="post-meta">
       <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%B %d, %Y' }}</time>
       <span class="post-dot">&middot;</span>
-      <span class="post-category">{{ page.category }}</span>
+      <a href="/blog/{{ page.category }}" class="post-category">{{ page.category | capitalize }}</a>
     </div>
   </header>
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
+  <ul class="post-tags tags">
+    {% for tag in page.tags %}
+      <li>
+        <a href="/blog/{{ page.category }}/#{{ tag }}">{{ tag }}</a>
+      </li>
+      <span class="post-slash slash">/</span>
+    {% endfor %}
+  </ul>
 </article>
 {% assign permalink = site.url | append: page.url %}
 {% include disqus.html page_url=permalink page_title=page.title%}

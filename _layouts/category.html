@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<h1 class="page-title">{{ page.title }}</h1>
+{% assign page_category = page.tag %}
+{% assign all_posts = site.categories[page_category] %}
+{% assign all_tags = all_posts | map: 'tags' %}
+{% assign tag_cloud = all_tags | uniq | sort %}
+<ul class="tag-cloud cloud">
+  {% for tag in tag_cloud %}
+    <li>
+      <a href="#{{ tag }}">{{ tag }}</a>
+    </li>
+  {% endfor %}
+</ul>
+<ul class="tag-list">
+  {% for tag in tag_cloud %}
+    <li class="tag-item">
+      <h3 class="tag-name" id="{{ tag }}">{{ tag }}</h3>
+      <ul class="tag-post-list">
+        {% for post in all_posts %}
+          {% if post.tags contains tag %}
+            <li class="tag-post-item">
+              <span class="tag-post-title">
+                <a href="{{ post.url }}">{{ post.title }}</a>
+              </span>
+              <div class="tag-post-meta">
+                <time class="tag-post-date">{{ post.date | date: '%b %d, %Y' }}</time>
+              </div>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </li>
+  {% endfor %}
+</ul>

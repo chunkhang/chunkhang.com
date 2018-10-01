@@ -17,14 +17,20 @@ pagination:
         <div class="blog-meta">
           <time class="blog-date">{{ post.date | date: '%B %d, %Y' }}</time>
           <span class="blog-dot">&middot;</span>
-          <span class="blog-category">{{ post.category }}</span>
+          <a href="/blog/{{ post.category }}" class="blog-category">{{ post.category | capitalize }}</a>
         </div>
       </header>
-      <div class="blog-excerpt clearfix">
-        <i class="fas fa-quote-left"></i>
-        <p>{{ post.content | strip_html | truncatewords: 42 }}</p>
-        <i class="fas fa-quote-right float-right"></i>
+      <div class="blog-excerpt">
+        <p>{{ post.content | strip_html | truncatewords: 35 }}</p>
       </div>
+      <ul class="blog-tags tags">
+        {% for tag in post.tags %}
+          <li>
+            <a href="/blog/{{ post.category }}/#{{ tag }}">{{ tag }}</a>
+          </li>
+          <span class="blog-slash slash">/</span>
+        {% endfor %}
+      </ul>
     </li>
   {% endfor %}
 </ul>

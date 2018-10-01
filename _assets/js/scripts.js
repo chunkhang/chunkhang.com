@@ -56,7 +56,7 @@
   }
 
   // Project cloud
-  const cloud = document.getElementById('js-cloud');
+  const cloud = document.getElementById('js-project-cloud');
   if (cloud !== null) {
     const projects = document.getElementsByClassName('js-projects');
     const tags = document.getElementsByClassName('js-tags');
