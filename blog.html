@@ -17,9 +17,7 @@ pagination:
         <div class="blog-meta">
           <time class="blog-date">{{ post.date | date: '%B %d, %Y' }}</time>
           <span class="blog-dot">&middot;</span>
-          <a href="/blog/{{ post.category }}" class="blog-category">
-            <span>{{ post.category | capitalize }}</span>
-          </a>
+          <a href="/blog/{{ post.category }}" class="blog-category">{{ post.category | capitalize }}</a>
         </div>
       </header>
       <div class="blog-excerpt clearfix">

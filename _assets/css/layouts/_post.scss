@@ -5,8 +5,10 @@
     line-height: 1;
   }
   .post-meta {
-    opacity: 0.65;
     margin-bottom: 2rem;
+    .post-date {
+      opacity: $blur;
+    }
   }
   .post-content {
     p, h1, h2, h3, h4, h5, h6 {
