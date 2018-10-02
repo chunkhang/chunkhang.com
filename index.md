@@ -5,7 +5,7 @@ title: Home
 
 <div class="introduction" markdown="1">
 
-{% asset marcus-mu.jpg @optim %}
+{% asset profile-picture.jpg @optim %}
 
 #### **Hello World**
 
