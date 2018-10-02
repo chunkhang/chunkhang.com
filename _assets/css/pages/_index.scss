@@ -11,7 +11,8 @@
   }
   h6 {
     margin-bottom: 0.5rem;
-    text-align: left;
+    text-align: center;
+    display: inline;
   }
 }
 
@@ -19,7 +20,7 @@
 
   .introduction {
     h6 {
-      text-align: center;
+      display: block;
     }
   }
 
