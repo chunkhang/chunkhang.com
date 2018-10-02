@@ -1,16 +1,25 @@
-- font: fab fa-github-square
+- name: GitHub
+  font: fab fa-github-square
   link: http://github.com/chunkhang
-- font: fab fa-linkedin
+- name: LinkedIn
+  font: fab fa-linkedin
   link: http://linkedin.com/in/chunkhang
-- font: fas fa-envelope-square
+- name: Email
+  font: fas fa-envelope-square
   link: mailto:chunkhang@gmail.com
-- font: fab fa-facebook-square
+- name: Facebook
+  font: fab fa-facebook-square
   link: http://facebook.com/khangmu
-- font: fab fa-twitter-square
+- name: Twitter
+  font: fab fa-twitter-square
   link: http://twitter.com/chunkhang
-- font: fab fa-instagram
+- name: Instagram
+  font: fab fa-instagram
   link: http://instagram.com/khangmu
-- font: fab fa-reddit-square
+  hack: true
+- name: Reddit
+  font: fab fa-reddit-square
   link: http://reddit.com/user/chunkhang
-- font: fas fa-rss-square
+- name: RSS
+  font: fas fa-rss-square
   link: http://chunkhang.com/feed.xml

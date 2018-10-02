@@ -2,8 +2,8 @@
 <ul class="footer-bar">
   {% for item in site.data.social %}
     <li class="footer-item">
-      <a href="{{ item.link }}" class="footer-icon" target="_blank">
-        <i class="{{ item.font }}"></i>
+      <a href="{{ item.link }}" class="footer-icon" target="_blank" title="{{ item.name }}">
+        <i class="{{ item.font }}" {% if item.hack %}data-fa-transform="shrink-5" data-fa-mask="fas fa-square"{% endif %}></i>
       </a>
     </li>
   {% endfor %}
