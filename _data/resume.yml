@@ -7,8 +7,8 @@ contact:
 
 summary: >
   A Bachelor of Computer Science from Sunway University, I am a person who believes in balancing both academics and extra-curriculum.
-  Having taken on several leadership roles, I realize that there will always be new opportunities for learning.
-  Hence, equipped with what little knowledge I possess, I wish to contribute to your organization in the hope of gaining invaluable experience and personal growth.
+  Having taken on several leadership roles, I realise that there will always be new opportunities for learning.
+  Hence, equipped with what little knowledge I possess, I wish to contribute to your organisation in the hope of gaining invaluable experience and personal growth.
   Should I be granted the opportunity, I will surely be an asset to your team.
 
 skills:
@@ -114,10 +114,54 @@ education:
 
 extra:
   - position: Vice President
-    club: Sunway University Student Council
-    period: May 2017 - April 2018
+    place: Sunway University Student Council
+    period: May 2017 - May 2018
     detail:
-      - Hello world
+      - Assisted the president in making critical decisions regarding the restructuring of council
+      - Supported AMEU, a representative body for undergraduate economic students abroad, in organising a summit
+      - Completed the Club Charter initiative to introduce a standard charter template for all clubs and societies
+  - position: President
+    place: Sunway University Ensemble
+    period: Nov 2016 - Oct 2017
+    detail:
+      - Acted as chairman for Bon Musique, an annual concert to raise funds for the club
+      - Organised Two Evenings of Musical Splendour, a two-part recital to showcase the musical talents of the club
+      - Handled the Triplet concert, a collaboration between Sunway University, Monash University and Taylor’s University
+  - position: President
+    place: Sunway Taekwondo Club
+    period: Nov 2015 - Oct 2016
+    detail:
+      - Organised a treasure hunt to foster relationships between several universities
+      - Organised a club trip to Broga Hill
+      - Organised a barbecue night
+      - Handled several demonstrations both in and out of campus
+      - Handled several competitions like MAPCU and MASISWA
+  - position: Marketing Executive
+    place: Sunway University Ensemble
+    period: Nov 2015 - Oct 2016
+    detail:
+      - Handled all club advertising and promotions
+      - Designed the poster and ticket for Evolution of Pop, an annual concert
+      - Handled all ticketing work for Evolution of Pop
+  - position: President
+    place: Sunway Badminton Club
+    period: Jan 2015 - Dec 2015
+    detail:
+      - Organised a closed badminton competition for Sunway students to showcase their badminton skills
+      - Introduced various systems to make the club more active
+  - position: Vice President
+    place: Sunway Taekwondo Club
+    period: Feb 2014 - Mar 2015
+    detail:
+      - Organised a welcoming dinner involving several universities to install new members
+      - Organised a movie night to raise funds for the club
+  - position: President
+    place: Catholic High School Computer Club
+    period: May 2012 - Apr 2013
+    detail:
+      - Organised Innovation Week, a campaign done in collaboration with Creative Club to promote the convergence of technology and creativity
+      - Organised a trip to The One Academy for members to attend workshops on digital art
+      - Organised a Dota competition to raise funds
 
 languages:
   - name: English
