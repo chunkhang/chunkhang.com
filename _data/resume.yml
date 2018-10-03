@@ -6,30 +6,62 @@ contact:
   address: Subang Jaya, Selangor
 
 summary: >
-  There is no spoon.
-  Only fork.
+  An undergraduate pursuing Computer Science in Sunway University, I am a person who believes in balancing both academics and extra-curriculum.
+  Having taken on several leadership roles, I realize that there will always be new opportunities for learning.
+  Hence, equipped with what little knowledge I possess, I wish to contribute to your organization in the hope of gaining invaluable experience and personal growth.
+  Should I be granted the opportunity, I will surely be an asset to your team.
 
 skills:
   technical:
     language:
-      - html
-      - css
-    framework:
-      - flask
-    library:
-      - bootstrap
+      - HTML/CSS
+      - JavaScript
+      - Python
+      - Ruby
+      - Java
+      - Scala
+      - Shell
+      - Vimscript
+    technology:
+      - Bootstrap
+      - Bulma
+      - Sass
+      - jQuery
+      - Vue.js
+      - Jekyll
+      - Phaser
+      - Flask
+      - Rails
+      - Play
     database:
-      - mongodb
-    server:
-      - nginx
+      - MongoDB
+      - Postgres
+      - Oracle
+      - Neo4j
+    deployment:
+      - DigitalOcean
+      - Heroku
+      - GoDaddy
+      - Travis CI
+      - Nginx
+      - Ubuntu
+    packaging:
+      - PyPI
+      - Homebrew
     versioning:
-      - git
+      - Git
     tool:
-      - vim
+      - Vim
+      - Sublime Text
+      - iTerm
+      - Sketch
+      - Illustrator
+      - Photoshop
+      - Slack
   managerial:
-    - communication skills
-    - team leadership
-    - project management
+    - Communication Skills
+    - Team Leadership
+    - Project Management
 
 work:
   - position: Research Assistant
