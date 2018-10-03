@@ -11,7 +11,7 @@ title: Home
 
 ###### I am **Marcus Mu**, a tea-loving programmer with diverse interests.
 
-###### I am a Bachelor of **Computer Science** currently residing in Selangor, Malaysia.
+###### I am a Bachelor of **Computer Science** currently residing in Subang Jaya, Malaysia.
 
 ###### My **passions** include coding, music, martial arts, sports, design and many more.
 
