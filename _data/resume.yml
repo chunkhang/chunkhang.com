@@ -1,1 +1,72 @@
 name: Mu Chun Khang
+
+contact:
+  phone: +60 12 785 3778
+  email: chunkhang@gmail.com
+  address: Subang Jaya, Selangor
+
+summary: >
+  There is no spoon.
+  Only fork.
+
+skills:
+  technical:
+    language:
+      - html
+      - css
+    framework:
+      - flask
+    library:
+      - bootstrap
+    database:
+      - mongodb
+    server:
+      - nginx
+    versioning:
+      - git
+    tool:
+      - vim
+  managerial:
+    - communication skills
+    - team leadership
+    - project management
+
+work:
+  - position: Research Assistant
+    place: Sunway University
+    period: Nov 2015 - Mar 2017
+    detail:
+      - Hello world
+
+education:
+  - name: BSc (Hons) in Computer Science
+    place: Sunway University
+    period: March 2016 - July 2018
+    detail:
+      - Hello world
+
+extra:
+  - position: Vice President
+    club: Sunway University Student Council
+    period: May 2017 - April 2018
+    detail:
+      - Hello world
+
+languages:
+  - name: English
+    proficiency: Bilingual
+
+references:
+  - name: Dr Malissa Maria Mahmud
+    position: Senior Lecturer
+    place: Sunway University
+    phone: +60 12 666 9308
+    email: malissam@sunway.edu.my
+
+social:
+  - name: Website
+    link: chunkhang.com
+  - name: GitHub
+    link: github.com/chunkhang
+  - name: LinkedIn
+    link: linkedin.com/in/chunkhang
