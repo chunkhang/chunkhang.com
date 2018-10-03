@@ -63,9 +63,9 @@ skills:
       - Photoshop
       - Slack
   managerial:
-    - Communication Skills
     - Team Leadership
     - Project Management
+    - Event Planning
 
 work:
   - position: Full Stack Software Engineer
@@ -92,10 +92,25 @@ work:
 education:
   - name: BSc (Hons) in Computer Science
     place: Sunway University
-    period: March 2016 - July 2018
-    link: 
+    period: Mar 2016 - Jul 2018
+    link: http://university.sunway.edu.my/tech/bsc-comp-sc
     detail:
-      - Hello world
+      - Attained 79.06% overall average
+      - Graduated with first-class honours
+  - name: American Degree Transfer Program (ADTP)
+    place: Sunway University
+    period: Jan 2014 - Dec 2015
+    link: http://university.sunway.edu.my/american/programme
+    detail:
+      - Attained 3.96 CGPA
+      - Graduated with summa cum laude
+  - name: Malaysian Certificate of Education (SPM)
+    place: Catholic High School
+    period: 2013
+    link: http://en.wikipedia.org/wiki/Sijil_Pelajaran_Malaysia
+    detail:
+      - Attained 11A's
+      - Graduated from science stream
 
 extra:
   - position: Vice President
