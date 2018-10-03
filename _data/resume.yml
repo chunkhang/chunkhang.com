@@ -121,7 +121,11 @@ extra:
 
 languages:
   - name: English
-    proficiency: Bilingual
+    proficiency: Native / Bilingual
+  - name: Mandarin
+    proficiency: Native / Bilingual
+  - name: Malay
+    proficiency: Professional Working
 
 references:
   - name: Dr Malissa Maria Mahmud
@@ -129,6 +133,11 @@ references:
     place: Sunway University
     phone: +60 12 666 9308
     email: malissam@sunway.edu.my
+  - name: Mr Rockie Siew Wi Nam
+    position: Regional Consultant
+    place: Rockschool Malaysia
+    phone: +60 12 387 4664
+    email: rockcin@gmail.com
 
 social:
   - name: Website
