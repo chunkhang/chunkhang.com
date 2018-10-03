@@ -6,7 +6,7 @@ contact:
   address: Subang Jaya, Selangor
 
 summary: >
-  An undergraduate pursuing Computer Science in Sunway University, I am a person who believes in balancing both academics and extra-curriculum.
+  A Bachelor of Computer Science from Sunway University, I am a person who believes in balancing both academics and extra-curriculum.
   Having taken on several leadership roles, I realize that there will always be new opportunities for learning.
   Hence, equipped with what little knowledge I possess, I wish to contribute to your organization in the hope of gaining invaluable experience and personal growth.
   Should I be granted the opportunity, I will surely be an asset to your team.
@@ -14,7 +14,8 @@ summary: >
 skills:
   technical:
     language:
-      - HTML/CSS
+      - HTML
+      - CSS
       - JavaScript
       - Python
       - Ruby
@@ -24,6 +25,7 @@ skills:
       - Vimscript
     technology:
       - Bootstrap
+      - Font Awesome
       - Bulma
       - Sass
       - jQuery
@@ -31,12 +33,14 @@ skills:
       - Jekyll
       - Phaser
       - Flask
+      - Click
       - Rails
       - Play
     database:
       - MongoDB
       - Postgres
       - Oracle
+      - Redis
       - Neo4j
     deployment:
       - DigitalOcean
@@ -64,16 +68,32 @@ skills:
     - Project Management
 
 work:
+  - position: Full Stack Software Engineer
+    place: Vase.ai
+    period: Dec 2017 - Mar 2018
+    link: http://vase.ai
+    detail:
+      - Served a three-month internship
+      - Worked closely with CTO and CEO to identify requirements, implement features and gather feedback
+      - Developed Ops Tool, an internal web tool that automates the processes of data cleaning and tabulation
+      - Significantly reduced the manual labour of the Ops Team
   - position: Research Assistant
     place: Sunway University
     period: Nov 2015 - Mar 2017
+    link: http://linkedin.com/in/malissa-maria-mahmud-259420141
     detail:
-      - Hello world
+      - Assisted Dr Malissa Maria Mahmud, a PhD candidate, to complete her doctorate on blended learning
+      - Extracted data from voluminous research papers
+      - Engaged in critical discussions
+      - Proofread thesis thoroughly
+      - Prepared for viva extensively
+      - Thesis awarded Best Dissertation Award by Universiti Teknologi MARA
 
 education:
   - name: BSc (Hons) in Computer Science
     place: Sunway University
     period: March 2016 - July 2018
+    link: 
     detail:
       - Hello world
 
