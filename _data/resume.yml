@@ -20,7 +20,6 @@ skills:
       - CSS
       - JavaScript
       - Python
-      - Ruby
       - Java
       - Scala
       - Shell
@@ -33,10 +32,8 @@ skills:
       - jQuery
       - Vue.js
       - Jekyll
-      - Phaser
       - Flask
       - Click
-      - Rails
       - Play
     database:
       - MongoDB
@@ -47,7 +44,6 @@ skills:
     deployment:
       - DigitalOcean
       - Heroku
-      - GoDaddy
       - Travis CI
       - Nginx
       - Ubuntu
@@ -69,7 +65,8 @@ skills:
     - Project Management
     - Event Planning
     - Design
-    - Editing / Proofreading
+    - Editing
+    - Proofreading
 
 work:
   - position: Full Stack Software Engineer

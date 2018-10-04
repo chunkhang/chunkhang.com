@@ -1,18 +1,30 @@
 .resume {
   border: 0.25rem solid $gray;
-  padding: 3rem;
+  padding: 4rem;
   font-size: 1.4rem;
   line-height: 2rem;
   * {
-    margin-bottom: 0;
+    margin: 0;
   }
   header, hr, section {
     margin-bottom: 2rem;
   }
+  h3, h4 {
+    font-weight: bold;
+  }
   h3 {
     margin-bottom: 1rem;
-    font-weight: bold;
-    font-size: 2.6rem;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: $green;
+  }
+  h4 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+  }
+  ul {
+    font-size: 100%;
+    list-style-type: initial;
   }
   .resume-header {
     text-align: center;
@@ -45,6 +57,42 @@
     margin-bottom: 1.5rem;
     p {
       text-align: justify;
+    }
+  }
+  .resume-skills {
+    .resume-skills-header {
+      margin-bottom: 0.5rem;
+    }
+    .resume-skills-technical {
+      display: inline-block;
+      width: 70%;
+      margin-bottom: 0;
+      .resume-skills-technical-list {
+        list-style: none;
+        li {
+          .resume-skills-technical-category-header {
+            font-weight: bold;
+            display: inline-block;
+            width: 20%;
+          }
+          .resume-skills-technical-category-list {
+            list-style: none;
+            display: inline-block;
+            width: 75%;
+            li {
+              display: inline;
+              &:not(:last-child):after {
+                content: ",\00a0";
+              }
+            }
+          }
+        }
+      }
+    }
+    .resume-skills-additional {
+      display: inline-block;
+      width: 30%;
+      margin-bottom: 0;
     }
   }
 }

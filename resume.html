@@ -19,26 +19,31 @@ title: Resume
   <section class="resume-profile">
     <p>{{ resume.profile }}</p>
   </section>
-  <section class="resume-skills">
-    <h3 class="resume-skills-header">Technical Skills</h3>
-    <ul class="resume-skills-technical-list">
-      {% for category in resume.skills.technical %}
-        <li>
-          <span class="resume-skills-technical-header">{{ category[0] }}</span>
-          <ul class="resume-skills-technical-{{ category[0] }}-list">
-            {% for item in category[1] %}
-              <li>{{ item }}</li>
-            {% endfor %}
-          </ul>
-        </li>
-      {% endfor %}
-    </ul>
-    <h3 class="resume-skills-header">Addtional Skills</h3>
-    <ul class="resume-skills-addtional-list">
-      {% for item in resume.skills.additional %}
-        <li>{{ item }}</li>
-      {% endfor %}
-    </ul>
+  <section class="resume-skills clearfix">
+    <h3 class="resume-skills-header">Skills</h3>
+    <section class="resume-skills-technical float-left">
+      <h4 class="resume-skills-technical-header">Technical</h4>
+      <ul class="resume-skills-technical-list">
+        {% for category in resume.skills.technical %}
+          <li>
+            <span class="resume-skills-technical-category-header float-left">{{ category[0] | capitalize }}: </span>
+            <ul class="resume-skills-technical-category-list">
+              {% for item in category[1] %}
+                <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+    <section class="resume-skills-additional">
+      <h4 class="resume-skills-additional-header">Additional</h4>
+      <ul class="resume-skills-additional-list">
+        {% for item in resume.skills.additional %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </section>
   </section>
   <section class="resume-work">
     <h3 class="resume-work-header">Work</h3>
@@ -75,6 +80,7 @@ title: Resume
         </li>
       {% endfor %}
     </ul>
+  </section>
   <section class="resume-extra">
     <h3 class="resume-extra-header">Extra</h3>
     <ul class="resume-extra-list">
