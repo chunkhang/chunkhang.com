@@ -87,7 +87,7 @@
             li {
               display: inline;
               &:not(:last-child):after {
-                content: ",\00a0";
+                content: ", ";
               }
             }
           }
@@ -142,6 +142,33 @@
           &:after {
             content: " ·";
             font-weight: initial;
+          }
+        }
+      }
+    }
+  }
+  .resume-references {
+    .resume-references-list {
+      list-style: none;
+      & > li {
+        margin-bottom: 1rem;
+        .resume-references-header {
+          margin-bottom: 0rem;
+          .resume-references-name {
+            font-weight: bold;
+          }
+          .resume-references-title {
+            font-style: italic;
+          }
+        }
+        .resume-references-contact-list {
+          list-style: none;
+          font-size: 1.3rem;
+          li {
+            display: inline;
+            &:after {
+              content: " ·";
+            }
           }
         }
       }

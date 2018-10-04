@@ -118,11 +118,15 @@ title: Resume
     <ul class="resume-references-list">
       {% for reference in resume.references %}
         <li>
-          {{ reference.name }} |
-          {{ reference.position }} |
-          {{ reference.place }} |
-          {{ reference.phone }} |
-          {{ reference.email }}
+          <header class="resume-references-header">
+            <p class="resume-references-name">{{ reference.name }}</p>
+            <p class="resume-references-title">{{ reference.position }}, {{ reference.place }}</p>
+          </header>
+          <ul class="resume-references-contact-list">
+            {% for contact in reference.contact %}
+              <li>{{ contact[1] }}</li>
+            {% endfor %}
+          </ul>
         </li>
       {% endfor %}
     </ul>

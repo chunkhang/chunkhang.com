@@ -171,10 +171,12 @@ references:
   - name: Dr Malissa Maria Mahmud
     position: Senior Lecturer
     place: Sunway University
-    phone: +60 12 666 9308
-    email: malissam@sunway.edu.my
+    contact:
+      phone: +60 12 666 9308
+      email: malissam@sunway.edu.my
   - name: Mr Rockie Siew Wi Nam
     position: Regional Consultant
     place: Rockschool Malaysia
-    phone: +60 12 387 4664
-    email: rockcin@gmail.com
+    contact:
+      phone: +60 12 387 4664
+      email: rockcin@gmail.com
