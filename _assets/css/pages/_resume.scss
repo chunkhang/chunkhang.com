@@ -20,7 +20,7 @@
   }
   h4 {
     margin-bottom: 0.5rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   ul {
     font-size: 100%;
@@ -56,6 +56,7 @@
   .resume-profile {
     margin-bottom: 1.5rem;
     p {
+      font-size: 1.3rem;
       text-align: justify;
     }
   }
@@ -63,12 +64,16 @@
     .resume-skills-header {
       margin-bottom: 0.5rem;
     }
+    .resume-skills-technical-header, .resume-skills-additional-header {
+      text-transform: uppercase;
+    }
     .resume-skills-technical {
       display: inline-block;
       width: 70%;
       margin-bottom: 0;
       .resume-skills-technical-list {
         list-style: none;
+        font-size: 1.3rem;
         li {
           .resume-skills-technical-category-header {
             font-weight: bold;
@@ -93,6 +98,35 @@
       display: inline-block;
       width: 30%;
       margin-bottom: 0;
+      .resume-skills-additional-list {
+        font-size: 1.3rem;
+      }
+    }
+  }
+  .resume-work {
+    .resume-work-list {
+      list-style: none;
+      & > li {
+        margin-bottom: 1rem;
+        .resume-work-item-header {
+          margin-bottom: 0;
+          .resume-work-item-position {
+            font-weight: bold;
+            &:after {
+              content: " ·";
+            }
+          }
+          .resume-work-item-period {
+            display: block;
+            margin-top: -0.2rem;
+            font-size: 1.3rem;
+            font-style: italic;
+          }
+        }
+        .resume-work-item-detail-list {
+          font-size: 1.3rem;
+        }
+      }
     }
   }
 }

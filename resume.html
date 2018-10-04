@@ -50,10 +50,12 @@ title: Resume
     <ul class="resume-work-list">
       {% for work in resume.work %}
         <li>
-          {{ work.position }} |
-          {{ work.place }} |
-          {{ work.period }}
-          <ul class="resume-work-detail-list">
+          <header class="resume-work-item-header">
+            <span class="resume-work-item-position">{{ work.position }}</span>
+            <span class="resume-work-item-place">{{ work.place }}</span>
+            <span class="resume-work-item-period">{{ work.period }}</span>
+          </header>
+          <ul class="resume-work-item-detail-list">
             {% for detail in work.detail %}
               <li>{{ detail }}</li>
             {% endfor %}
