@@ -2,7 +2,7 @@
   border: 0.25rem solid $gray;
   padding: 4rem;
   font-size: 1.4rem;
-  line-height: 2rem;
+  line-height: 1.75rem;
   * {
     margin: 0;
   }
@@ -31,7 +31,7 @@
     .resume-name {
       font-weight: bold;
       color: $green;
-      margin-bottom: -0.35rem;
+      margin-bottom: -0.25rem;
     }
     .resume-address {
       font-weight: bold;
@@ -118,7 +118,7 @@
           }
           .item-period {
             display: block;
-            margin-top: -0.25rem;
+            margin-top: -0.15rem;
             font-size: 1.2rem;
             font-style: italic;
           }
