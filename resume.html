@@ -47,15 +47,15 @@ title: Resume
   </section>
   <section class="resume-work">
     <h3 class="resume-work-header">Work Experience</h3>
-    <ul class="resume-work-list">
+    <ul class="resume-work-list list">
       {% for work in resume.work %}
         <li>
-          <header class="resume-work-item-header">
-            <span class="resume-work-item-position">{{ work.position }}</span>
-            <span class="resume-work-item-place">{{ work.place }}</span>
-            <span class="resume-work-item-period">{{ work.period }}</span>
+          <header class="resume-work-item-header item-header">
+            <span class="resume-work-item-position item-main">{{ work.position }}</span>
+            <span class="resume-work-item-place item-place">{{ work.place }}</span>
+            <span class="resume-work-item-period item-period">{{ work.period }}</span>
           </header>
-          <ul class="resume-work-item-detail-list">
+          <ul class="resume-work-item-detail-list item-detail-list">
             {% for detail in work.detail %}
               <li>{{ detail }}</li>
             {% endfor %}
@@ -66,13 +66,15 @@ title: Resume
   </section>
   <section class="resume-education">
     <h3 class="resume-education-header">Education</h3>
-    <ul class="resume-education-list">
+    <ul class="resume-education-list list">
       {% for education in resume.education %}
         <li>
-          {{ education.name }} |
-          {{ education.place }} |
-          {{ education.period }}
-          <ul class="resume-education-detail-list">
+          <header class="resume-education-item-header item-header">
+            <span class="resume-education-item-name item-main">{{ education.name }}</span>
+            <span class="resume-education-item-place item-place">{{ education.place }}</span>
+            <span class="resume-education-item-period item-period">{{ education.period }}</span>
+          </header>
+          <ul class="resume-education-item-detail-list item-detail-list">
             {% for detail in education.detail %}
               <li>{{ detail }}</li>
             {% endfor %}
@@ -83,13 +85,15 @@ title: Resume
   </section>
   <section class="resume-extra">
     <h3 class="resume-extra-header">Extracurricular Roles</h3>
-    <ul class="resume-extra-list">
+    <ul class="resume-extra-list list">
       {% for extra in resume.extra %}
         <li>
-          {{ extra.position }} |
-          {{ extra.place }} |
-          {{ extra.period }}
-          <ul class="resume-extra-detail-list">
+          <header class="resume-extra-item-header item-header">
+            <span class="resume-extra-item-position item-main">{{ extra.position }}</span>
+            <span class="resume-extra-item-place item-place">{{ extra.place }}</span>
+            <span class="resume-extra-item-period item-period">{{ extra.period }}</span>
+          </header>
+          <ul class="resume-extra-item-detail-list item-detail-list">
             {% for detail in extra.detail %}
               <li>{{ detail }}</li>
             {% endfor %}

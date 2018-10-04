@@ -103,27 +103,27 @@
       }
     }
   }
-  .resume-work {
-    .resume-work-list {
+  .resume-work, .resume-education, .resume-extra {
+    .list {
       list-style: none;
       & > li {
         margin-bottom: 1rem;
-        .resume-work-item-header {
+        .item-header {
           margin-bottom: 0;
-          .resume-work-item-position {
+          .item-main {
             font-weight: bold;
             &:after {
               content: " ·";
             }
           }
-          .resume-work-item-period {
+          .item-period {
             display: block;
-            margin-top: -0.2rem;
-            font-size: 1.3rem;
+            margin-top: -0.25rem;
+            font-size: 1.2rem;
             font-style: italic;
           }
         }
-        .resume-work-item-detail-list {
+        .item-detail-list {
           font-size: 1.3rem;
         }
       }
