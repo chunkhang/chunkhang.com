@@ -5,7 +5,7 @@ contact:
   email: chunkhang@gmail.com
   address: Subang Jaya, Selangor
 
-summary: >
+profile: >
   A Bachelor of Computer Science from Sunway University, I am a person who believes in balancing both academics and extra-curriculum.
   Having taken on several leadership roles, I realise that there will always be new opportunities for learning.
   Hence, equipped with what little knowledge I possess, I wish to contribute to your organisation in the hope of gaining invaluable experience and personal growth.
@@ -62,10 +62,12 @@ skills:
       - Illustrator
       - Photoshop
       - Slack
-  managerial:
+  additional:
     - Team Leadership
     - Project Management
     - Event Planning
+    - Design
+    - Editing / Proofreading
 
 work:
   - position: Full Stack Software Engineer

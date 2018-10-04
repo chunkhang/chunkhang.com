@@ -4,4 +4,36 @@ title: Resume
 ---
 
 <h1 class="page-title">Resume</h1>
-{{ site.data.resume }}
+<div class="resume">
+  {% assign resume = site.data.resume %}
+  <header class="resume-header">
+    <h2 class="resume-name">{{ resume.name }}</h2>
+    <ul class="resume-contact-list">
+      {% for contact in resume.contact %}
+        <li>{{ contact[0] }}: {{ contact[1] }}</li>
+      {% endfor %}
+    </ul>
+  </header>
+  <section class="resume-profile">
+    <p>{{ resume.profile }}</p>
+  </section>
+  <section class="resume-skills">
+    <h3>Technical Skills</h3>
+    <ul class="resume-skills-technical-list">
+      {% for category in resume.skills.technical %}
+        <h4>{{ category[0] }}</h4>
+        <ul class="resume-skills-technical-{{ category[0] }}-list">
+          {% for item in category[1] %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      {% endfor %}
+    </ul>
+    <h3>Addtional Skills</h3>
+    <ul class="resume-skills-addtional-list">
+      {% for item in resume.skills.additional %}
+        <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>
