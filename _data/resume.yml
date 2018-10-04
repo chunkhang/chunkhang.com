@@ -72,7 +72,6 @@ work:
   - position: Full Stack Software Engineer
     place: Vase.ai
     period: Dec 2017 - Mar 2018
-    link: http://vase.ai
     detail:
       - Served a three-month internship
       - Worked closely with CTO and CEO to identify requirements, implement features and gather feedback
@@ -81,7 +80,6 @@ work:
   - position: Research Assistant
     place: Sunway University
     period: Nov 2015 - Mar 2017
-    link: http://linkedin.com/in/malissa-maria-mahmud-259420141
     detail:
       - Assisted Dr Malissa Maria Mahmud, a PhD candidate, to complete her doctorate on blended learning
       - Extracted data from voluminous research papers
@@ -94,21 +92,18 @@ education:
   - name: BSc (Hons) in Computer Science
     place: Sunway University
     period: Mar 2016 - Jul 2018
-    link: http://university.sunway.edu.my/tech/bsc-comp-sc
     detail:
       - Attained 79.06% overall average
       - Graduated with first-class honours
   - name: American Degree Transfer Program (ADTP)
     place: Sunway University
     period: Jan 2014 - Dec 2015
-    link: http://university.sunway.edu.my/american/programme
     detail:
       - Attained 3.96 CGPA
       - Graduated with summa cum laude
   - name: Malaysian Certificate of Education (SPM)
     place: Catholic High School
     period: 2013
-    link: http://en.wikipedia.org/wiki/Sijil_Pelajaran_Malaysia
     detail:
       - Attained 11A's
       - Graduated from science stream
