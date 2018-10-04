@@ -24,7 +24,6 @@
   }
   ul {
     font-size: 100%;
-    list-style-type: initial;
   }
   .resume-header {
     text-align: center;
@@ -125,6 +124,19 @@
         }
         .item-detail-list {
           font-size: 1.3rem;
+          li {
+            list-style-position: initial;
+            margin-left: 1.25rem;
+          }
+        }
+      }
+    }
+  }
+  .resume-languages {
+    .resume-languages-list {
+      li {
+        .resume-language-name {
+          font-weight: bold;
         }
       }
     }
