@@ -18,10 +18,10 @@ title: Resume
     <p>{{ resume.profile }}</p>
   </section>
   <section class="resume-skills">
-    <h3>Technical Skills</h3>
+    <h3 class="resume-skills-header">Technical Skills</h3>
     <ul class="resume-skills-technical-list">
       {% for category in resume.skills.technical %}
-        <h4>{{ category[0] }}</h4>
+        <h4 class="resume-skills-technical-header">{{ category[0] }}</h4>
         <ul class="resume-skills-technical-{{ category[0] }}-list">
           {% for item in category[1] %}
             <li>{{ item }}</li>
@@ -29,7 +29,7 @@ title: Resume
         </ul>
       {% endfor %}
     </ul>
-    <h3>Addtional Skills</h3>
+    <h3 class="resume-skills-header">Addtional Skills</h3>
     <ul class="resume-skills-addtional-list">
       {% for item in resume.skills.additional %}
         <li>{{ item }}</li>
