@@ -84,7 +84,7 @@ title: Resume
     </ul>
   </section>
   <section class="resume-extra">
-    <h3 class="resume-extra-header">Extracurricular Roles</h3>
+    <h3 class="resume-extra-header">Extracurricular Experience</h3>
     <ul class="resume-extra-list list">
       {% for extra in resume.extra %}
         <li>
@@ -107,13 +107,15 @@ title: Resume
     <ul class="resume-languages-list">
       {% for language in resume.languages %}
         <li>
-          <span class="resume-language-name">{{ language.name }}</span>
-          <span class="resume-language-proficiency">{{ language.proficiency }}</span>
+          <header class="resume-language-header">
+            <p class="resume-language-name">{{ language.name }}</p>
+          </header>
+          <p class="resume-language-proficiency">{{ language.proficiency }}</p>
         </li>
       {% endfor %}
     </ul>
   </section>
-  <section class="resume-references">
+  <section class="resume-references clearfix">
     <h3 class="resume-references-header">References</h3>
     <ul class="resume-references-list">
       {% for reference in resume.references %}

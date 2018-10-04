@@ -136,12 +136,14 @@
   }
   .resume-languages {
     .resume-languages-list {
+      list-style: none;
+      display: flex;
       li {
-        .resume-language-name {
-          font-weight: bold;
-          &:after {
-            content: " ·";
-            font-weight: initial;
+        margin-right: 7.5rem;
+        .resume-language-header {
+          margin-bottom: 0;
+          .resume-language-name {
+            font-weight: bold;
           }
         }
       }
@@ -152,13 +154,16 @@
       list-style: none;
       & > li {
         margin-bottom: 1rem;
+        display: inline-block;
+        width: 50%;
+        float: left;
         .resume-references-header {
-          margin-bottom: 0rem;
+          margin-bottom: 0;
           .resume-references-name {
             font-weight: bold;
           }
           .resume-references-title {
-            font-style: italic;
+            margin-bottom: 0.2rem;
           }
         }
         .resume-references-contact-list {
@@ -166,7 +171,7 @@
           font-size: 1.3rem;
           li {
             display: inline;
-            &:after {
+            &:not(:last-child):after {
               content: " ·";
             }
           }
