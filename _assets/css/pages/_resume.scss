@@ -42,6 +42,7 @@
       li {
         &:not(:last-child):after {
           content: " ·\00a0";
+          font-weight: initial;
         }
       }
     }
@@ -113,6 +114,7 @@
             font-weight: bold;
             &:after {
               content: " ·";
+              font-weight: initial;
             }
           }
           .item-period {
@@ -137,6 +139,10 @@
       li {
         .resume-language-name {
           font-weight: bold;
+          &:after {
+            content: " ·";
+            font-weight: initial;
+          }
         }
       }
     }
