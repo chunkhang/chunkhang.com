@@ -53,7 +53,7 @@ title: Resume
           <header class="resume-work-header item-header">
             <span class="resume-work-position item-main">{{ work.position }}</span>
             <span class="resume-work-place item-place">{{ work.place }}</span>
-            <span class="resume-work-period item-period">{{ work.period }}</span>
+            <span class="resume-work-period item-period">{{ work.period | replace: '-', '—' }}</span>
           </header>
           <ul class="resume-work-detail-list item-detail-list">
             {% for detail in work.detail %}
@@ -72,7 +72,7 @@ title: Resume
           <header class="resume-education-header item-header">
             <span class="resume-education-name item-main">{{ education.name }}</span>
             <span class="resume-education-place item-place">{{ education.place }}</span>
-            <span class="resume-education-period item-period">{{ education.period }}</span>
+            <span class="resume-education-period item-period">{{ education.period | replace: '-', '—' }}</span>
           </header>
           <ul class="resume-education-detail-list item-detail-list">
             {% for detail in education.detail %}
@@ -91,7 +91,7 @@ title: Resume
           <header class="resume-extra-header item-header">
             <span class="resume-extra-position item-main">{{ extra.position }}</span>
             <span class="resume-extra-place item-place">{{ extra.place }}</span>
-            <span class="resume-extra-period item-period">{{ extra.period }}</span>
+            <span class="resume-extra-period item-period">{{ extra.period | replace: '-', '—' }}</span>
           </header>
           <ul class="resume-extra-detail-list item-detail-list">
             {% for detail in extra.detail %}
