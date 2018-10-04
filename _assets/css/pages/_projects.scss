@@ -13,16 +13,11 @@
       line-height: 1.2;
     }
     .project-tags {
-      list-style: none;
-      margin: 0;
-      font-size: 1.4rem;
       li, .project-slash {
-        display: inline;
-        margin: 0;
         opacity: $blur;
       }
-      .project-slash:last-child {
-        display: none;
+      .project-slash {
+        color: unset;
       }
     }
   }

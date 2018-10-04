@@ -47,7 +47,7 @@ pre {
   }
 }
 
-.cloud {
+.global-cloud {
   list-style: none;
   margin-top: -0.5rem;
   margin-bottom: 2rem;
@@ -61,7 +61,7 @@ pre {
   }
 }
 
-.tags {
+.global-tags {
   list-style: none;
   margin: 0;
   font-size: 1.4rem;
@@ -69,7 +69,7 @@ pre {
     display: inline;
     margin: 0;
   }
-  .slash {
+  .global-slash {
     color: $green;
     &:last-child {
       display: none;

@@ -4,7 +4,7 @@ title: Projects
 ---
 
 <h1 class="page-title">Projects</h1>
-<ul class="project-cloud cloud" id="js-project-cloud">
+<ul class="project-cloud global-cloud" id="js-project-cloud">
   {% assign all_tags = site.data.projects | map: 'tags' | join | split: ' ' %}
   {% assign tag_cloud = all_tags | uniq | sort %}
   {% for tag in tag_cloud %}
@@ -19,11 +19,11 @@ title: Projects
       </h3>
       <div class="project-meta">
         <p class="project-description">{{ project.description }}</p>
-        <ul class="project-tags">
+        <ul class="project-tags global-tags">
           {% assign tags = project.tags | split: ' ' %}
           {% for tag in tags %}
             <li class="js-tags">{{ tag }}</li>
-            <span class="project-slash">/</span>
+            <span class="project-slash global-slash">/</span>
           {% endfor %}
         </ul>
       </div>

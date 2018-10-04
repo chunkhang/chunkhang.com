@@ -14,12 +14,12 @@ layout: default
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
-  <ul class="post-tags tags">
+  <ul class="post-tags global-tags">
     {% for tag in page.tags %}
       <li>
         <a href="/blog/{{ page.category }}/#{{ tag }}">{{ tag }}</a>
       </li>
-      <span class="post-slash slash">/</span>
+      <span class="post-slash global-slash">/</span>
     {% endfor %}
   </ul>
 </article>

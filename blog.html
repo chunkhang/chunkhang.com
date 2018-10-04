@@ -23,12 +23,12 @@ pagination:
       <div class="blog-excerpt">
         <p>{{ post.content | strip_html | truncatewords: 35 }}</p>
       </div>
-      <ul class="blog-tags tags">
+      <ul class="blog-tags global-tags">
         {% for tag in post.tags %}
           <li>
             <a href="/blog/{{ post.category }}/#{{ tag }}">{{ tag }}</a>
           </li>
-          <span class="blog-slash slash">/</span>
+          <span class="blog-slash global-slash">/</span>
         {% endfor %}
       </ul>
     </li>

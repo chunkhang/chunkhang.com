@@ -7,7 +7,7 @@ layout: default
 {% assign all_posts = site.categories[page_category] %}
 {% assign all_tags = all_posts | map: 'tags' %}
 {% assign tag_cloud = all_tags | uniq | sort %}
-<ul class="tag-cloud cloud">
+<ul class="tag-cloud global-cloud">
   {% for tag in tag_cloud %}
     <li>
       <a href="#{{ tag }}">{{ tag }}</a>
