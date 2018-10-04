@@ -7,15 +7,16 @@ title: Resume
 <div class="resume">
   {% assign resume = site.data.resume %}
   <header class="resume-header">
-    <h2 class="resume-name">{{ resume.name }}</h2>
+    <h2 class="resume-name">{{ resume.name | upcase }}</h2>
+    <p class="resume-address">{{ resume.address }}</p>
     <ul class="resume-contact-list">
       {% for contact in resume.contact %}
-        <li>{{ contact[0] }}: {{ contact[1] }}</li>
+        <li>{{ contact[1] }}</li>
       {% endfor %}
     </ul>
   </header>
+  <hr class="resume-line">
   <section class="resume-profile">
-    <h3 class="resume-profile-header">Profile</h3>
     <p>{{ resume.profile }}</p>
   </section>
   <section class="resume-skills">
@@ -112,17 +113,6 @@ title: Resume
           {{ reference.place }} |
           {{ reference.phone }} |
           {{ reference.email }}
-        </li>
-      {% endfor %}
-    </ul>
-  </section>
-  <section class="resume-social">
-    <h3 class="resume-social-header">Social</h3>
-    <ul class="resume-social-list">
-      {% for social in resume.social %}
-        <li>
-          {{ social.name }} |
-          {{ social.link }}
         </li>
       {% endfor %}
     </ul>

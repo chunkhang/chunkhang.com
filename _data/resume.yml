@@ -1,9 +1,11 @@
 name: Mu Chun Khang
 
+address: Subang Jaya, Malaysia
+
 contact:
   phone: +60 12 785 3778
   email: chunkhang@gmail.com
-  address: Subang Jaya, Selangor
+  website: www.chunkhang.com
 
 profile: >
   A Bachelor of Computer Science from Sunway University, I am a person who believes in balancing both academics and extra-curriculum.
@@ -184,11 +186,3 @@ references:
     place: Rockschool Malaysia
     phone: +60 12 387 4664
     email: rockcin@gmail.com
-
-social:
-  - name: Website
-    link: chunkhang.com
-  - name: GitHub
-    link: github.com/chunkhang
-  - name: LinkedIn
-    link: linkedin.com/in/chunkhang
