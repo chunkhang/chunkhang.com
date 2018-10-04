@@ -15,24 +15,115 @@ title: Resume
     </ul>
   </header>
   <section class="resume-profile">
+    <h3 class="resume-profile-header">Profile</h3>
     <p>{{ resume.profile }}</p>
   </section>
   <section class="resume-skills">
     <h3 class="resume-skills-header">Technical Skills</h3>
     <ul class="resume-skills-technical-list">
       {% for category in resume.skills.technical %}
-        <h4 class="resume-skills-technical-header">{{ category[0] }}</h4>
-        <ul class="resume-skills-technical-{{ category[0] }}-list">
-          {% for item in category[1] %}
-            <li>{{ item }}</li>
-          {% endfor %}
-        </ul>
+        <li>
+          <span class="resume-skills-technical-header">{{ category[0] }}</span>
+          <ul class="resume-skills-technical-{{ category[0] }}-list">
+            {% for item in category[1] %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </li>
       {% endfor %}
     </ul>
     <h3 class="resume-skills-header">Addtional Skills</h3>
     <ul class="resume-skills-addtional-list">
       {% for item in resume.skills.additional %}
         <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  <section class="resume-work">
+    <h3 class="resume-work-header">Work</h3>
+    <ul class="resume-work-list">
+      {% for work in resume.work %}
+        <li>
+          {{ work.position }} |
+          {{ work.place }} |
+          {{ work.period }} |
+          {{ work.link }}
+          <ul class="resume-work-detail-list">
+            {% for detail in work.detail %}
+              <li>{{ detail }}</li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+  <section class="resume-education">
+    <h3 class="resume-education-header">Education</h3>
+    <ul class="resume-education-list">
+      {% for education in resume.education %}
+        <li>
+          {{ education.name }} |
+          {{ education.place }} |
+          {{ education.period }} |
+          {{ education.link }}
+          <ul class="resume-education-detail-list">
+            {% for detail in education.detail %}
+              <li>{{ detail }}</li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endfor %}
+    </ul>
+  <section class="resume-extra">
+    <h3 class="resume-extra-header">Extra</h3>
+    <ul class="resume-extra-list">
+      {% for extra in resume.extra %}
+        <li>
+          {{ extra.position }} |
+          {{ extra.place }} |
+          {{ extra.period }}
+          <ul class="resume-extra-detail-list">
+            {% for detail in extra.detail %}
+              <li>{{ detail }}</li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+  <section class="resume-languages">
+    <h3 class="resume-languages-header">Languages</h3>
+    <ul class="resume-languages-list">
+      {% for language in resume.languages %}
+        <li>
+          {{ language.name }} |
+          {{ language.proficiency }}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+  <section class="resume-references">
+    <h3 class="resume-references-header">References</h3>
+    <ul class="resume-references-list">
+      {% for reference in resume.references %}
+        <li>
+          {{ reference.name }} |
+          {{ reference.position }} |
+          {{ reference.place }} |
+          {{ reference.phone }} |
+          {{ reference.email }}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+  <section class="resume-social">
+    <h3 class="resume-social-header">Social</h3>
+    <ul class="resume-social-list">
+      {% for social in resume.social %}
+        <li>
+          {{ social.name }} |
+          {{ social.link }}
+        </li>
       {% endfor %}
     </ul>
   </section>
