@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   {% if page.title %}
-    {% capture title %}{{ page.title | append: ' - ' | append: site.title }}{% endcapture %}
+    {% capture title %}{{ page.title }} · {{ site.title }}{% endcapture %}
   {% else %}
     {% assign title = site.title %}
   {% endif %}
