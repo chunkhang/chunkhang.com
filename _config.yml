@@ -1,6 +1,9 @@
 title: Marcus Mu
-description: My little personal corner in the vast cyberspace
+description: >
+  I am Marcus Mu, a tea-loving programmer with diverse interests.
+  Welcome to my little personal corner in the vast cyberspace.
 url: "http://chunkhang.com"
+logo: /assets/seo-logo.png
 
 plugins:
   - jekyll-paginate-v2
@@ -30,6 +33,17 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+
+assets:
+  raw_precompile:
+    - seo-img.jpg
+    - seo-logo.png
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/seo-img.jpg
 
 exclude:
   - Gemfile
