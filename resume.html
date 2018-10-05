@@ -136,8 +136,14 @@ title: Resume
 </div>
 <style>
   @media print {
+    @page {
+      size: A4;
+    }
     body * {
       visibility: hidden;
+    }
+    .container {
+      margin-top: 0;
     }
     #print-section, #print-section * {
       visibility: visible;
