@@ -1,6 +1,6 @@
 .resume {
   border: 0.25rem solid $gray;
-  padding: 3rem 2rem;
+  padding: 2rem;
   font-size: 1.4rem;
   line-height: 1.75rem;
   margin-bottom: 2rem;
@@ -29,7 +29,7 @@
       font-weight: bold;
       color: $green;
       margin-bottom: -0.25rem;
-      font-size: 3.4rem;
+      font-size: 3.2rem;
     }
     .resume-address {
       font-weight: bold;
@@ -50,7 +50,6 @@
     opacity: $blur;
   }
   .resume-profile {
-    margin-bottom: 1.5rem;
     p {
       font-size: 1.3rem;
       text-align: justify;
@@ -133,6 +132,7 @@
     }
   }
   .resume-references {
+    margin-bottom: 1rem;
     .resume-references-list {
       list-style: none;
       & > li {
@@ -161,7 +161,7 @@
     padding: 4rem;
     .resume-header {
       .resume-name {
-        font-size: 3.6rem;
+        font-size: 3.4rem;
       }
       .resume-contact-list {
         display: flex;
