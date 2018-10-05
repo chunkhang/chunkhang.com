@@ -1,0 +1,7 @@
+<script>
+  const isFirefox = typeof InstallTrigger !== 'undefined';
+  if (isFirefox) {
+    const html = document.getElementsByTagName('html')[0];
+    html.classList.add('is-firefox');
+  }
+</script>

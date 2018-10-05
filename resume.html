@@ -38,7 +38,7 @@ title: Resume
     </section>
     <section class="resume-skills-additional">
       <h4 class="resume-skills-additional-header">Additional</h4>
-      <ul class="resume-skills-additional-list">
+      <ul class="resume-skills-additional-list global-list">
         {% for item in resume.skills.additional %}
           <li>{{ item }}</li>
         {% endfor %}
@@ -55,7 +55,7 @@ title: Resume
             <span class="resume-work-place item-place">{{ work.place }}</span>
             <span class="resume-work-period item-period">{{ work.period | replace: '-', '—' }}</span>
           </header>
-          <ul class="resume-work-detail-list item-detail-list">
+          <ul class="resume-work-detail-list item-detail-list global-list">
             {% for detail in work.detail %}
               <li>{{ detail }}</li>
             {% endfor %}
@@ -74,7 +74,7 @@ title: Resume
             <span class="resume-education-place item-place">{{ education.place }}</span>
             <span class="resume-education-period item-period">{{ education.period | replace: '-', '—' }}</span>
           </header>
-          <ul class="resume-education-detail-list item-detail-list">
+          <ul class="resume-education-detail-list item-detail-list global-list">
             {% for detail in education.detail %}
               <li>{{ detail }}</li>
             {% endfor %}
@@ -93,7 +93,7 @@ title: Resume
             <span class="resume-extra-place item-place">{{ extra.place }}</span>
             <span class="resume-extra-period item-period">{{ extra.period | replace: '-', '—' }}</span>
           </header>
-          <ul class="resume-extra-detail-list item-detail-list">
+          <ul class="resume-extra-detail-list item-detail-list global-list">
             {% for detail in extra.detail %}
               <li>{{ detail }}</li>
             {% endfor %}

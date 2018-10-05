@@ -8,12 +8,9 @@
     }
     .tag-post-list {
       margin: 0;
-      margin-left: 1.5rem;
-      font-size: 100%;
       .tag-post-item {
         margin: 0;
         margin-bottom: 1rem;
-        list-style-position: initial;
         line-height: 1;
         .tag-post-meta {
           opacity: $blur;

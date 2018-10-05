@@ -18,7 +18,7 @@ layout: default
   {% for tag in tag_cloud %}
     <li class="tag-item">
       <h3 class="tag-name" id="{{ tag }}">{{ tag }}</h3>
-      <ul class="tag-post-list">
+      <ul class="tag-post-list global-list">
         {% for post in all_posts %}
           {% if post.tags contains tag %}
             <li class="tag-post-item">

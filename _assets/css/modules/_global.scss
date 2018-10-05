@@ -47,6 +47,10 @@ pre {
   }
 }
 
+ul ul {
+  font-size: 100%;
+}
+
 .global-cloud {
   list-style: none;
   margin-top: -0.5rem;
@@ -77,6 +81,13 @@ pre {
   }
 }
 
+.global-list {
+  margin-left: 1.7rem !important;
+  li {
+    list-style-position: outside;
+  }
+}
+
 @include for-tablet-portrait-up {
 
   html {
@@ -103,6 +114,14 @@ pre {
     li:hover {
       opacity: 1;
     }
+  }
+
+}
+
+@include for-firefox {
+
+  .global-list {
+    margin-left: 1.25rem !important;
   }
 
 }
