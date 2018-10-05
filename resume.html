@@ -134,26 +134,8 @@ title: Resume
     </ul>
   </section>
 </div>
-<style>
-  @media print {
-    @page {
-      size: A4;
-    }
-    body * {
-      visibility: hidden;
-    }
-    .container {
-      margin-top: 0;
-    }
-    #print-section, #print-section * {
-      visibility: visible;
-    }
-    #print-section {
-      position: absolute;
-      left: 0;
-      top: 0;
-      border: none;
-      padding: 0;
-    }
-  }
-</style>
+<script>
+  // To make sure print styles do not apply to other pages
+  const html = document.getElementsByTagName('html')[0];
+  html.classList.add('is-resume');
+</script>
