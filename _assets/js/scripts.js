@@ -92,4 +92,19 @@
     });
   }
 
+  // Print button
+  const printButton = document.getElementById('js-print');
+  if (printButton !== null) {
+    const resume = document.getElementById('js-resume');
+    printButton.addEventListener('click', function() {
+      window.print();
+    });
+    resume.addEventListener('mouseenter', function() {
+      printButton.classList.add('visible');
+    });
+    resume.addEventListener('mouseleave', function() {
+      printButton.classList.remove('visible');
+    });
+  }
+
 })();
