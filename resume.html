@@ -4,7 +4,7 @@ title: Resume
 ---
 
 <h1 class="page-title">Resume</h1>
-<div class="resume print-section" id="js-resume" >
+<div class="resume print-document" id="js-resume" >
   {% assign resume = site.data.resume %}
   <span class="print-button" id="js-print" title="Print"><i class="fas fa-print"></i></span>
   <header class="resume-header">
@@ -50,7 +50,7 @@ title: Resume
     <h3 class="resume-work-header">Work Experience</h3>
     <ul class="resume-work-list list">
       {% for work in resume.work %}
-        <li>
+        <li class="print-item">
           <header class="resume-work-header item-header">
             <span class="resume-work-position item-main">{{ work.position }}</span>
             <span class="resume-work-place item-place">{{ work.place }}</span>
@@ -69,7 +69,7 @@ title: Resume
     <h3 class="resume-education-header">Education</h3>
     <ul class="resume-education-list list">
       {% for education in resume.education %}
-        <li>
+        <li class="print-item">
           <header class="resume-education-header item-header">
             <span class="resume-education-name item-main">{{ education.name }}</span>
             <span class="resume-education-place item-place">{{ education.place }}</span>
@@ -88,7 +88,7 @@ title: Resume
     <h3 class="resume-extra-header">Extracurricular Experience</h3>
     <ul class="resume-extra-list list">
       {% for extra in resume.extra %}
-        <li>
+        <li class="print-item">
           <header class="resume-extra-header item-header">
             <span class="resume-extra-position item-main">{{ extra.position }}</span>
             <span class="resume-extra-place item-place">{{ extra.place }}</span>
@@ -120,7 +120,7 @@ title: Resume
     <h3 class="resume-references-header">References</h3>
     <ul class="resume-references-list">
       {% for reference in resume.references %}
-        <li>
+        <li class="print-item">
           <header class="resume-references-header">
             <p class="resume-references-name">{{ reference.name }}</p>
             <p class="resume-references-title">{{ reference.position }}, {{ reference.place }}</p>

@@ -273,7 +273,7 @@
         .container {
           margin-top: 0;
         }
-        .print-section {
+        .print-document {
           position: absolute;
           left: 0;
           top: 0;
@@ -284,6 +284,9 @@
           }
           .print-button {
             display: none;
+          }
+          .print-item {
+            page-break-inside: avoid;
           }
         }
       }
