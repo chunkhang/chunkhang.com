@@ -8,7 +8,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-  <title>{{ page.title }} - Marcus Mu</title>
+  {% if page.title %}
+    {% capture title %}{{ page.title | append: ' - ' | append: site.title }}{% endcapture %}
+  {% else %}
+    {% assign title = site.title %}
+  {% endif %}
+  <title>{{ title }}</title>
   {% include favicon.html favicon_version='1' %}
   {% include vendor.html %}
   {% asset styles.css %}
