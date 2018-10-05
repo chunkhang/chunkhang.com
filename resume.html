@@ -4,7 +4,7 @@ title: Resume
 ---
 
 <h1 class="page-title">Resume</h1>
-<div class="resume">
+<div class="resume" id="print-section">
   {% assign resume = site.data.resume %}
   <header class="resume-header">
     <h2 class="resume-name">{{ resume.name | upcase }}</h2>
@@ -134,3 +134,20 @@ title: Resume
     </ul>
   </section>
 </div>
+<style>
+  @media print {
+    body * {
+      visibility: hidden;
+    }
+    #print-section, #print-section * {
+      visibility: visible;
+    }
+    #print-section {
+      position: absolute;
+      left: 0;
+      top: 0;
+      border: none;
+      padding: 0;
+    }
+  }
+</style>
