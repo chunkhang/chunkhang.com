@@ -125,9 +125,8 @@
   .resume-languages {
     .resume-languages-list {
       list-style: none;
-      display: flex;
       li {
-        margin-right: 7.5rem;
+        margin-bottom: 1rem;
         .resume-language-header {
           margin-bottom: 0;
           .resume-language-name {
@@ -232,6 +231,15 @@
               margin-top: -0.15rem;
             }
           }
+        }
+      }
+    }
+    .resume-languages {
+      .resume-languages-list {
+        display: flex;
+        li {
+          margin-bottom: 0;
+          margin-right: 7.5rem;
         }
       }
     }
