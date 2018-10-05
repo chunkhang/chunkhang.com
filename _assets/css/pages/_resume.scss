@@ -10,9 +10,6 @@
   header, hr, section {
     margin-bottom: 2rem;
   }
-  section:last-child {
-    margin-bottom: 0;
-  }
   h3, h4 {
     font-weight: bold;
   }
@@ -141,16 +138,10 @@
       list-style: none;
       & > li {
         margin-bottom: 1rem;
-        display: inline-block;
-        width: 50%;
-        float: left;
         .resume-references-header {
           margin-bottom: 0;
           .resume-references-name {
             font-weight: bold;
-          }
-          .resume-references-title {
-            margin-bottom: 0.2rem;
           }
         }
         .resume-references-contact-list {
@@ -240,6 +231,16 @@
         li {
           margin-bottom: 0;
           margin-right: 7.5rem;
+        }
+      }
+    }
+    .resume-references {
+      .resume-references-list {
+        & > li {
+          margin-bottom: 0;
+          display: inline-block;
+          width: 50%;
+          float: left;
         }
       }
     }
