@@ -1,5 +1,10 @@
 html {
   font-size: 55%;
+  &:not(.fontawesome-i2svg-complete) {
+    i:after {
+      content: "\00a0";
+    }
+  }
 }
 
 a {
