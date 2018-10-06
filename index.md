@@ -4,7 +4,9 @@ layout: default
 
 <div class="introduction" markdown="1">
 
-{% asset profile-picture.jpg @optim %}
+<div class="introduction-img">
+   {% asset profile-picture.jpg @optim %}
+</div>
 
 #### **Hello World**
 
