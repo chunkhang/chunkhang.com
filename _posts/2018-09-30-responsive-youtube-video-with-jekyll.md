@@ -59,7 +59,7 @@ First of all, create a partial HTML file called `_includes/youtube.html`:
 </div>
 ```
 
-Take note of the `div` that wraps the `iframe` . The `div` should have a wrapper class called `youtube-wrapper`. The `include.id` is a parameter that will be passed in later.
+Take note of the `<div>` that wraps the `<iframe>` . The `<div>` should have a wrapper class called `.youtube-wrapper`. The `include.id` is a parameter that will be passed in later.
 
 ### Stylesheet
 
@@ -97,7 +97,7 @@ title: Nyan Cat
 {{ "{% include youtube.html id='QH2-TGUlwu4' " }}%}
 ```
 
-In this case, we pass in `QH2-TGUlwu4` as the `id` for the partial. This `id` can easily be substituted for a different YouTube video.
+In this case, we pass in `'QH2-TGUlwu4'` as the `id` for the partial. This `id` can easily be substituted for a different YouTube video.
 
 ### Responsive Video
 
