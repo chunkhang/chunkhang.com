@@ -3,10 +3,11 @@
     <a href="/" class="navigation-brand">
       <h2>Marcus&nbsp;M</h2>
       <div class="navigation-brand-img">
-        {% asset tea-cup.png @optim @pic
-            srcset:max-width="28"
-            srcset:max-width="27"
-            srcset:max-width="25" %}
+        {% include picture.html
+            img='tea-cup.png'
+            default='28'
+            media='max-width'
+            sources='600px:27,900px:25' %}
       </div>
     </a>
   </header>

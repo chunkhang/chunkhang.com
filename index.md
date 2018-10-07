@@ -5,10 +5,11 @@ layout: default
 <div class="introduction" markdown="1">
 
 <div class="introduction-img">
-  {% asset profile-picture.jpg @optim @pic
-      srcset:max-width="150"
-      srcset:max-width="141"
-      srcset:max-width="132" %}
+  {% include picture.html
+      img='profile-picture.jpg'
+      default='150'
+      media='max-width'
+      sources='600px:132,900px:141' %}
 </div>
 
 #### **Hello World**

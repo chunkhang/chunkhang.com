@@ -1,0 +1,10 @@
+<picture>
+  {% assign sources = include.sources | split: ',' %}
+  {% for source in sources %}
+    {% assign info = source | split: ':' %}
+    <source
+      media="({{ include.media }}: {{ info[0] }})"
+      srcset="{% asset '{{ include.img }}' @optim magick:resize='{{ info[1] }}' @path %}, {% asset '{{ include.img }}' @optim magick:resize='{{ info[1] | times: 2 }}' @path %} 2x">
+  {% endfor %}
+  {% asset '{{ include.img }}' @optim magick:resize='{{ include.default | times: 2 }}' %}
+</picture>
