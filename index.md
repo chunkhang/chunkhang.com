@@ -7,6 +7,7 @@ layout: default
 <div class="introduction-img">
   {% asset profile-picture.jpg @optim @pic
       srcset:max-width="150"
+      srcset:max-width="141"
       srcset:max-width="132" %}
 </div>
 
