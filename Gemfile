@@ -10,6 +10,7 @@ gem 'image_optim'
 gem 'image_optim_pack'
 gem 'mini_magick'
 gem 'autoprefixer-rails'
+gem 'sprockets', '~>3.7'
 
 group :jekyll_plugins do
   gem 'jekyll-seo-tag'
