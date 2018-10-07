@@ -39,11 +39,12 @@ assets:
     img:
       optim:
         allow_lossy: true
-  autoprefixer:
-    browsers:
-      - "> 1%"
-      - "last 3 versions"
-      - "IE > 8"
+    css: { autoprefixer: {} }
+    autoprefixer:
+      browsers:
+        - "> 1%"
+        - "last 5 versions"
+        - "IE > 8"
   raw_precompile:
     - seo-img.jpg
     - seo-logo.png
