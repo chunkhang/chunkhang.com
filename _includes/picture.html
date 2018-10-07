@@ -6,5 +6,7 @@
       media="({{ include.media }}: {{ info[0] }})"
       srcset="{% asset '{{ include.img }}' @optim magick:resize='{{ info[1] }}' @path %}, {% asset '{{ include.img }}' @optim magick:resize='{{ info[1] | times: 2 }}' @path %} 2x">
   {% endfor %}
-  {% asset '{{ include.img }}' @optim magick:resize='{{ include.default | times: 2 }}' %}
+  <img
+    src="{% asset '{{ include.img }}' @optim magick:resize='{{ include.default }}' @path %}"
+    srcset="{% asset '{{ include.img }}' @optim magick:resize='{{ include.default }}' @path %}, {% asset '{{ include.img }}' @optim magick:resize='{{ include.default | times: 2 }}' @path %} 2x">
 </picture>
