@@ -9,6 +9,7 @@ gem 'uglifier'
 gem 'image_optim'
 gem 'image_optim_pack'
 gem 'mini_magick'
+gem 'autoprefixer-rails'
 
 group :jekyll_plugins do
   gem 'jekyll-seo-tag'
