@@ -1,0 +1,16 @@
+#!/bin/zsh
+
+if [ "$#" -ne 2 ]; then
+    echo "usage: pdf <html input path> <pdf output path>"
+else
+    # Make a copy of html file
+    COPY_PATH=$(dirname $1)'/copy-'$(basename $1)
+    cp $1 $COPY_PATH
+    # Use relative path for assets
+    sed -i '' 's/"\/assets/"..\/assets/g' $COPY_PATH
+    # Convert html to pdf
+    wkhtmltopdf --print-media-type --disable-smart-shrinking --margin-top 15mm --margin-bottom 15mm $COPY_PATH $2
+    # Delete copy
+    rm $COPY_PATH
+fi
+
