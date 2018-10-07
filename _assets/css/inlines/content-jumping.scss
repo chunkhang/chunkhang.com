@@ -1,0 +1,11 @@
+@import "../base/all";
+
+@include for-tablet-portrait-up {
+
+  .post-content {
+    img {
+      padding: 0 20rem;
+    }
+  }
+
+}

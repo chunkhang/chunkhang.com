@@ -33,8 +33,4 @@ html:not(.fontawesome-i2svg-complete) i:after {
 
 ### Images
 
-<style>
-  .post-img {
-    padding: 0 20rem;
-  }
-</style>
+{% asset content-jumping.css @inline %}
