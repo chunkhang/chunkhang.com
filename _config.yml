@@ -39,12 +39,6 @@ assets:
     img:
       optim:
         allow_lossy: true
-    css:
-      autoprefixer:
-        browsers:
-          - "> 1%"
-          - "last 3 versions"
-          - "IE > 8"
   sources:
     - _assets/css/inlines
   raw_precompile:
