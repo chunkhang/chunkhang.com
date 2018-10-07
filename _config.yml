@@ -35,6 +35,10 @@ kramdown:
   syntax_highlighter: rouge
 
 assets:
+  plugins:
+    img:
+      optim:
+        allow_lossy: true
   raw_precompile:
     - seo-img.jpg
     - seo-logo.png
