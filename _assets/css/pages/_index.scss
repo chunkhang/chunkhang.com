@@ -3,10 +3,12 @@
   margin-bottom: 2rem;
   .introduction-img {
     height: 15rem;
+    width: 15rem;
     margin-top: 0.5rem;
     margin-bottom: 1.75rem;
+    margin-left: auto;
+    margin-right: auto;
     img {
-      height: inherit;
       border-radius: 50%;
     }
   }

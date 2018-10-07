@@ -5,7 +5,9 @@ layout: default
 <div class="introduction" markdown="1">
 
 <div class="introduction-img">
-   {% asset profile-picture.jpg @optim %}
+  {% asset profile-picture.jpg @optim @pic
+      srcset:max-width="150"
+      srcset:max-width="132" %}
 </div>
 
 #### **Hello World**

@@ -8,6 +8,7 @@ gem 'sass'
 gem 'uglifier'
 gem 'image_optim'
 gem 'image_optim_pack'
+gem 'mini_magick'
 
 group :jekyll_plugins do
   gem 'jekyll-seo-tag'
