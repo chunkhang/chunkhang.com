@@ -9,7 +9,7 @@ else
     # Use relative path for assets
     sed -i '' 's/"\/assets/"..\/assets/g' $COPY_PATH
     # Convert html to pdf
-    wkhtmltopdf --print-media-type --disable-smart-shrinking $COPY_PATH $2
+    wkhtmltopdf --print-media-type --disable-smart-shrinking --page-size A4 $COPY_PATH $2
     # Delete copy
     rm $COPY_PATH
 fi

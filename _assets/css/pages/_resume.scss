@@ -291,6 +291,9 @@
           .print-item {
             page-break-inside: avoid;
           }
+          hr {
+            border-top-width: 0.3mm;
+          }
         }
       }
     }
