@@ -12,7 +12,7 @@ else
     CSS_PATH=$(dirname $2)'/'$(basename -s .scss $2)'.css'
     bundle exec sass --no-cache --sourcemap=none $2 $CSS_PATH
     # Convert html to pdf
-    bundle exec wkhtmltopdf --print-media-type --disable-javascript --disable-smart-shrinking --page-size A4 --margin-left 0 --margin-right 0 --margin-top 0 --margin-bottom 0 --user-style-sheet $CSS_PATH $HTML_PATH $3
+    bundle exec wkhtmltopdf --print-media-type --disable-javascript --disable-smart-shrinking --page-size A4 --margin-left 0 --margin-right 0 --margin-top 10mm --margin-bottom 10mm --user-style-sheet $CSS_PATH $HTML_PATH $3
     # Clean up
     rm $HTML_PATH $CSS_PATH $2
 fi
