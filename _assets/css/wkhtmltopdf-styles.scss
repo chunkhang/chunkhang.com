@@ -1,4 +1,13 @@
+// Fonts must be ttf format encoded in base64: https://github.com/wkhtmltopdf/wkhtmltopdf/issues/3578#issuecomment-327601478
+// Converter: https://amio.github.io/embedded-google-fonts/
+
+@import "wkhtmltopdf-fonts";
+
 @media print {
+
+  body {
+    font-family: 'Roboto Print' !important;
+  }
 
   .container {
     margin: 0;

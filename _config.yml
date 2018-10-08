@@ -44,7 +44,8 @@ assets:
   raw_precompile:
     - seo-img.jpg
     - seo-logo.png
-    - wkhtmltopdf.scss
+    - wkhtmltopdf-styles.scss
+    - wkhtmltopdf-fonts.scss
 
 defaults:
   - scope:
