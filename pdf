@@ -1,16 +1,19 @@
 #!/bin/zsh
 
-if [ "$#" -ne 2 ]; then
-    echo "usage: pdf <html input path> <pdf output path>"
+if [ "$#" -ne 3 ]; then
+    echo "usage: pdf <html input path> <scss input path> <pdf output path>"
 else
     # Make a copy of html file
-    COPY_PATH=$(dirname $1)'/copy-'$(basename $1)
-    cp $1 $COPY_PATH
+    HTML_PATH=$(dirname $1)'/copy-'$(basename $1)
+    cp $1 $HTML_PATH
     # Use relative path for assets
-    sed -i '' 's/"\/assets/"..\/assets/g' $COPY_PATH
+    sed -i '' 's/"\/assets/"..\/assets/g' $HTML_PATH
+    # Preprocess custom scss file
+    CSS_PATH=$(dirname $2)'/'$(basename -s .scss $2)'.css'
+    bundle exec sass --no-cache --sourcemap=none $2 $CSS_PATH
     # Convert html to pdf
-    wkhtmltopdf --print-media-type --disable-smart-shrinking --page-size A4 $COPY_PATH $2
-    # Delete copy
-    rm $COPY_PATH
+    wkhtmltopdf --print-media-type --disable-smart-shrinking --page-size A4 --margin-left 0 --margin-right 0 --margin-top 0 --margin-bottom 0 --user-style-sheet $CSS_PATH $HTML_PATH $3
+    # Clean up
+    rm $HTML_PATH $CSS_PATH $2
 fi
 

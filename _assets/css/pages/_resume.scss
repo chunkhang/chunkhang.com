@@ -164,135 +164,98 @@
   }
 }
 
-@mixin resume-desktop-styles {
-}
-
 @include for-tablet-portrait-up {
 
-  html.is-resume {
-    .resume {
-      padding: 4rem;
-      .resume-header {
-        .resume-name {
-          font-size: 3.4rem;
-        }
-        .resume-contact-list {
-          display: -webkit-box;
-          display: flex;
-          -webkit-box-pack: center;
-          justify-content: center;
-          margin-top: 0.25rem;
-          li {
-            &:not(:last-child):after {
-              content: " ·\00a0";
-              font-weight: initial;
-            }
+  .resume {
+    padding: 4rem;
+    .resume-header {
+      .resume-name {
+        font-size: 3.4rem;
+      }
+      .resume-contact-list {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        margin-top: 0.25rem;
+        li {
+          &:not(:last-child):after {
+            content: " ·\00a0";
+            font-weight: initial;
           }
         }
       }
-      .resume-skills {
-        .resume-skills-technical {
-          float: left;
-          display: inline-block;
-          width: 70%;
-          margin-bottom: 0;
-          .resume-skills-technical-list {
-            li {
-              margin-bottom: 0;
-              .resume-skills-technical-category-header {
-                float: left;
-                display: inline-block;
-                width: 20%;
-              }
-              .resume-skills-technical-category-list {
-                display: inline-block;
-                width: 75%;
-              }
-            }
-          }
-        }
-        .resume-skills-additional {
-          display: inline-block;
-          width: 30%;
-        }
-      }
-      .resume-work, .resume-education, .resume-extra {
-        .list {
-          & > li {
-            .item-header {
-              .item-main {
-                &:after {
-                  content: " ·";
-                  font-weight: initial;
-                }
-              }
-              .item-place {
-                display: inline;
-              }
-            }
-          }
-        }
-      }
-      .resume-languages {
-        .resume-languages-list {
-          display: -webkit-box;
-          display: flex;
+    }
+    .resume-skills {
+      .resume-skills-technical {
+        float: left;
+        display: inline-block;
+        width: 70%;
+        margin-bottom: 0;
+        .resume-skills-technical-list {
           li {
             margin-bottom: 0;
-            margin-right: 7.5rem;
+            .resume-skills-technical-category-header {
+              float: left;
+              display: inline-block;
+              width: 20%;
+            }
+            .resume-skills-technical-category-list {
+              display: inline-block;
+              width: 75%;
+            }
           }
         }
       }
-      .resume-references {
-        .resume-references-list {
-          & > li {
-            margin-bottom: 0;
-            display: inline-block;
-            width: 50%;
-            float: left;
-            .resume-references-header {
-              margin-bottom: 0;
-            }
-            .resume-references-contact-list {
-              li {
-                display: inline;
-                &:not(:last-child):after {
-                  content: " ·";
-                }
+      .resume-skills-additional {
+        display: inline-block;
+        width: 30%;
+      }
+    }
+    .resume-work, .resume-education, .resume-extra {
+      .list {
+        & > li {
+          .item-header {
+            .item-main {
+              &:after {
+                content: " ·";
+                font-weight: initial;
               }
+            }
+            .item-place {
+              display: inline;
             }
           }
         }
       }
     }
-    @media print {
-      @page {
-        size: A4;
+    .resume-languages {
+      .resume-languages-list {
+        display: -webkit-box;
+        display: flex;
+        li {
+          margin-bottom: 0;
+          margin-right: 7.5rem;
+        }
       }
-      body {
-        * {
-          visibility: hidden;
-        }
-        .container {
-          margin-top: 0;
-        }
-        .print-document {
-          position: absolute;
-          left: 0;
-          top: 0;
-          border: none;
-          padding: 0;
-          * {
-            visibility: visible;
+    }
+    .resume-references {
+      .resume-references-list {
+        & > li {
+          margin-bottom: 0;
+          display: inline-block;
+          width: 50%;
+          float: left;
+          .resume-references-header {
+            margin-bottom: 0;
           }
-          .print-button {
-            display: none;
-          }
-          .print-item {
-            page-break-inside: avoid;
-          }
-          hr {
-            border-top-width: 0.3mm;
+          .resume-references-contact-list {
+            li {
+              display: inline;
+              &:not(:last-child):after {
+                content: " ·";
+              }
+            }
           }
         }
       }
