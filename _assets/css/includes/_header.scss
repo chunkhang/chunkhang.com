@@ -14,7 +14,6 @@
       .navigation-brand-img {
         height: 2.8rem;
         width: 2.8rem;
-        margin-top: 0.2rem;
       }
     }
   }
@@ -62,6 +61,20 @@
         }
         .navigation-dot {
           margin-right: 2.5rem;
+        }
+      }
+    }
+  }
+
+}
+
+@include for-firefox {
+
+  .site-header {
+    .navigation-header {
+      .navigation-brand {
+        .navigation-brand-img {
+          margin-top: 0.2rem;
         }
       }
     }
