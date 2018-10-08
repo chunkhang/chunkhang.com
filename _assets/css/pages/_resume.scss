@@ -1,10 +1,18 @@
+.page-download {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  .page-download-text {
+    font-size: 1.4rem;
+  }
+}
+
 .resume {
   border: 0.25rem solid $gray;
   padding: 2rem;
   font-size: 1.4rem;
   line-height: 1.75rem;
   margin-bottom: 2rem;
-  position: relative;
   * {
     margin: 0;
   }
@@ -24,14 +32,6 @@
     margin-bottom: 0.75rem;
     font-size: 1.8rem;
   }
-  // .resume-print {
-  //   position: absolute;
-  //   top: 2rem;
-  //   right: 2rem;
-  //   font-size: 2.4rem;
-  //   cursor: pointer;
-  //   visibility: hidden;
-  // }
   .resume-header {
     text-align: center;
     .resume-name {
