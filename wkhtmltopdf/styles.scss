@@ -13,8 +13,8 @@
     }
     .site-body {
       margin: 0;
-      .page-title {
-        display: none;
+      .page-title, .page-download {
+        display: none !important;
       }
       .resume {
         border: none !important;
