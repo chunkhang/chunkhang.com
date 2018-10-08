@@ -10,6 +10,7 @@ gem 'image_optim'
 gem 'image_optim_pack'
 gem 'mini_magick'
 gem 'sprockets', '~>3.7'
+gem 'wkhtmltopdf-installer', '~>0.12.5'
 
 group :jekyll_plugins do
   gem 'jekyll-seo-tag'

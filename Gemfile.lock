@@ -113,6 +113,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (4.1.19)
       execjs (>= 0.3.0, < 3)
+    wkhtmltopdf-installer (0.12.5.3)
 
 PLATFORMS
   ruby
@@ -132,6 +133,7 @@ DEPENDENCIES
   sass
   sprockets (~> 3.7)
   uglifier
+  wkhtmltopdf-installer (~> 0.12.5)
 
 BUNDLED WITH
    1.14.6
