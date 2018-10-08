@@ -1,13 +1,17 @@
-#!/bin/zsh
+#!/bin/bash -l
 
 if [ "$#" -ne 3 ]; then
     echo "usage: pdf <html input path> <scss input path> <pdf output path>"
 else
     # Make a copy of html file
-    HTML_PATH=$(dirname $1)'/copy-'$(basename $1)
+    HTML_PATH=$(dirname $1)/copy-$(basename $1)
     cp $1 $HTML_PATH
     # Use relative path for assets
-    sed -i '' 's/"\/assets/"..\/assets/g' $HTML_PATH
+    if [ "$(uname)" != "Darwin" ]; then
+      sed -i 's/"\/assets/"..\/assets/g' $HTML_PATH
+    else
+      sed -i '' 's/"\/assets/"..\/assets/g' $HTML_PATH
+    fi
     # Preprocess custom scss file
     CSS_PATH=$(dirname $2)'/'$(basename -s .scss $2)'.css'
     bundle exec sass --no-cache --sourcemap=none $2 $CSS_PATH
