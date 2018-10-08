@@ -1,32 +1,3 @@
-// @media print {
-//   body {
-//     * {
-//       visibility: hidden;
-//     }
-//     .container {
-//       margin: 0;
-//     }
-//     .print-document {
-//       position: absolute;
-//       left: 0;
-//       top: 0;
-//       border: none;
-//       padding: 0;
-//       * {
-//         visibility: visible;
-//       }
-//       .print-button {
-//         display: none;
-//       }
-//       .print-item {
-//       }
-//       hr {
-//         border-top-width: 0.3mm;
-//       }
-//     }
-//   }
-// }
-
 @media print {
 
   .container {
