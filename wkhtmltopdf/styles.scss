@@ -1,7 +1,7 @@
 // Fonts must be ttf format encoded in base64: https://github.com/wkhtmltopdf/wkhtmltopdf/issues/3578#issuecomment-327601478
 // Download fonts: https://google-webfonts-helper.herokuapp.com/fonts
 // Encode fonts: https://transfonter.org/
-@import "wkhtmltopdf-fonts";
+@import "fonts.css";
 
 @media print {
 

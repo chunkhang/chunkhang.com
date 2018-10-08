@@ -44,8 +44,6 @@ assets:
   raw_precompile:
     - seo-img.jpg
     - seo-logo.png
-    - wkhtmltopdf-styles.scss
-    - wkhtmltopdf-fonts.scss
 
 defaults:
   - scope:
@@ -59,4 +57,5 @@ exclude:
   - serve
   - deploy
   - pdf
+  - wkhtmltopdf
   - favicon.sketch
