@@ -17,6 +17,13 @@
         hr {
           border-top-width: 0.3mm !important;
         }
+        .resume-contact-list {
+          display: -webkit-box;
+          -webkit-box-pack: center;
+        }
+        .resume-languages-list {
+          display: -webkit-box;
+        }
       }
     }
   }

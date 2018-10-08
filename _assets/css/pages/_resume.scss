@@ -173,9 +173,7 @@
         font-size: 3.4rem;
       }
       .resume-contact-list {
-        display: -webkit-box;
         display: flex;
-        -webkit-box-pack: center;
         justify-content: center;
         margin-top: 0.25rem;
         li {
@@ -231,7 +229,6 @@
     }
     .resume-languages {
       .resume-languages-list {
-        display: -webkit-box;
         display: flex;
         li {
           margin-bottom: 0;
