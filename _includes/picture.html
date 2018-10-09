@@ -8,5 +8,6 @@
   {% endfor %}
   <img
     src="{% asset '{{ include.img }}' @optim magick:resize='{{ include.default }}' @path %}"
-    srcset="{% asset '{{ include.img }}' @optim magick:resize='{{ include.default }}' @path %}, {% asset '{{ include.img }}' @optim magick:resize='{{ include.default | times: 2 }}' @path %} 2x">
+    srcset="{% asset '{{ include.img }}' @optim magick:resize='{{ include.default }}' @path %}, {% asset '{{ include.img }}' @optim magick:resize='{{ include.default | times: 2 }}' @path %} 2x"
+    alt="{{ include.alt }}">
 </picture>

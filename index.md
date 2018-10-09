@@ -9,7 +9,8 @@ layout: default
       img='profile-picture.jpg'
       default='150'
       media='max-width'
-      sources='600px:132,900px:141' %}
+      sources='600px:132,900px:141'
+      alt='Profile Picture' %}
 </div>
 
 #### **Hello World**
