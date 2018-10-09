@@ -2,13 +2,15 @@ title: Marcus Mu
 description: >
   Hello World.
   I am Marcus Mu, a tea-loving programmer with diverse interests.
-url: "http://chunkhang.com"
+url: "https://www.chunkhang.com"
 logo: /assets/seo-logo.png
 
 plugins:
   - jekyll-paginate-v2
   - jekyll-assets
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-last-modified-at
 
 permalink: pretty
 
