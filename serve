@@ -1,4 +1,3 @@
 #!/bin/zsh
 
-echo 'Local IP address:' `ipconfig getifaddr en0`
 bundle exec jekyll serve --host=0.0.0.0 --unpublished
