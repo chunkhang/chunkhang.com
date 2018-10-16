@@ -59,7 +59,7 @@ Documents Dropbox   Movies    Pictures  Scripts
 
 I ran `jekyll serve --trace` to get more information regarding the error. Something that caught my attention was `(Sprockets::FileNotFound)`. [Sprockets](https://github.com/rails/sprockets) is a dependency for [Jekyll Assets](https://github.com/envygeeks/jekyll-assets), the gem I use for my asset pipeline. It meant that, somehow, Jekyll Assets was still using the old working directory.
 
-I tried running `jekyll clean` to no avail. Reinstalling the gem by removing it from `Gemfile` and adding it again also failed  However, renaming the `Workspace` folder back to the original `workspace` did solve the problem immediately.
+I tried running `jekyll clean` to no avail. Reinstalling the gem by removing it from `Gemfile` and adding it again also failed to solve the problem.
 
 ### The Solution
 
