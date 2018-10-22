@@ -28,6 +28,7 @@ skills:
       - Font Awesome
       - Bulma
       - Sass
+      - CoffeeScript
       - jQuery
       - Vue.js
       - Jekyll
