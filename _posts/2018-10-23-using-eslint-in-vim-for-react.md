@@ -11,14 +11,14 @@ Recently, I started learning [React](https://reactjs.org/). The initial setup fo
 A code linter is indispensable during development. Even though Create React App comes with ESLint, it only runs when the application is served. That means you can view the errors and warnings from ESLint from the terminal or browser console upon running the application.
 
 {% include picture.html
-    img='eslint-terminal.png'
+    img='eslint-terminal.jpg'
     default='760'
     media='max-width'
     sources='600px:564,900px:712'
     alt= 'eslint from terminal' %}
 
 {% include picture.html
-    img='eslint-console.png'
+    img='eslint-console.jpg'
     default='760'
     media='max-width'
     sources='600px:564,900px:712'
@@ -120,7 +120,7 @@ $ vim src/App.js
 ```
 
 {% include picture.html
-    img='eslint-vim.png'
+    img='eslint-vim.jpg'
     default='760'
     media='max-width'
     sources='600px:564,900px:712'
