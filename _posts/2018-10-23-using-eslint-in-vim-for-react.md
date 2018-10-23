@@ -3,7 +3,7 @@ layout: post
 title: Using ESLint in Vim for React
 date: 2018-10-23 21:53 +0800
 category: tech
-tags: react javascript eslint vim ale
+tags: react eslint vim ale
 ---
 
 Recently, I started learning [React](https://reactjs.org/). The initial setup for my first React application was done using [Create React App](https://github.com/facebook/create-react-app), a tool that spares developers, especially beginners, from the pain of configuring the environment. All reasonable dependencies such as [Webpack](https://webpack.js.org/), [Babel](https://babeljs.io/) and [ESLint](https://eslint.org/) have been properly included and configured out of the box. There is a nice Medium article on [Learning React with Create React App](https://medium.com/in-the-weeds/learning-react-with-create-react-app-part-1-a12e1833fdc) if you are interested.
@@ -88,21 +88,21 @@ Refer to the official documentation for [installation methods](https://github.co
 
 Next, we need to configure ALE in `.vimrc`.
 
-```
+```vim
 let g:ale_sign_error='●'
 let g:ale_sign_warning='.'
 ```
 
 This changes the symbol used to indicate errors and warnings, making them less aggressive than the default.
 
-```
+```vim
 let g:ale_lint_on_enter=0
 let g:ale_lint_on_text_changed='never'
 ```
 
 Setting `ale_lint_on_enter` to `0` prevents ALE from running when a file is first opened. Meanwhile, setting `ale_lint_on_text_changed` to `never` means the linter is only invoked whenever the file is saved. If you prefer your code to be linted as you type, you can remove this line.
 
-```
+```vim
 let g:ale_linters = {
     \ 'javascript': ['eslint']
     \ }
