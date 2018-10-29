@@ -43,6 +43,6 @@
   tags: console library python
   link: http://github.com/chunkhang/clivia
 - name: Final Year Project
-  description: Classroom management system
+  description: Class activity management system
   tags: web application play scala
   link: http://github.com/chunkhang/fyp
