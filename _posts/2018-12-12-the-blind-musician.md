@@ -4,6 +4,7 @@ title: The Blind Musician
 date: 2018-12-12 02:30 +0800
 category: personal
 tags: work life music
+image: /assets/walking-musician.png
 ---
 
 {% include post_image.html

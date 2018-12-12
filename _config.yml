@@ -40,11 +40,10 @@ assets:
     img:
       optim:
         allow_lossy: true
-  sources:
-    - _assets/css/inlines
   raw_precompile:
     - seo-img.jpg
     - seo-logo.png
+    - walking-musician.png
 
 defaults:
   - scope:
