@@ -6,12 +6,9 @@ category: personal
 tags: work life music
 ---
 
-{% include picture.html
+{% include post_image.html
     img='walking-musician.png'
-    default='760'
-    media='max-width'
-    sources='600px:564,900px:712'
-    alt= 'walking musician' %}
+    alt='walking musician' %}
 
 Last month, I officially entered the workforce. Soon after casting my resume out, I received a prompt reply from a company called [Pickupp](https://pickupp.io/). I guess it must be fate that they picked up my application. Just like that, I escaped unemployment, and earned the title of Junior Software Engineer. I lamented at how my days of ambling were over. A new chapter in life was unfolding itself. I drew a sharp breath, and exhaled, readying myself for the working life.
 
