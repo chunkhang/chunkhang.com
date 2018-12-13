@@ -25,17 +25,16 @@ skills:
       - Shell
     technology:
       - Bootstrap
-      - Font Awesome
       - Bulma
       - Sass
       - CoffeeScript
       - jQuery
+      - React
       - Vue.js
       - Jekyll
       - Flask
       - Click
       - Play
-      - Wkhtmltopdf
     database:
       - MongoDB
       - Postgres
