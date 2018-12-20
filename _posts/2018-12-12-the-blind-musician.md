@@ -14,6 +14,8 @@ image: /assets/walking-musician.png
 <a href="https://www.vecteezy.com">Free vector art via vecteezy.com</a>
 {: .attribution }
 
+<!--begin-->
+
 Last month, I officially entered the workforce. Soon after casting my resume out, I received a prompt reply from a company called [Pickupp](https://pickupp.io/). I guess it must be fate that they picked up my application. Just like that, I escaped unemployment, and earned the title of Junior Software Engineer. I lamented at how my days of ambling were over. A new chapter in life was unfolding itself. I drew a sharp breath, and exhaled, readying myself for the working life.
 
 My first day was rather memorable because every experience was novel. I remembered waking up before the sun rose. It was a one-hour drive to my workplace located in [Mont Kiara](https://en.wikipedia.org/wiki/Mont_Kiara). To pass the time, I tuned in to my favourite podcast — [99% Invisible](https://99percentinvisible.org/) — while cruising along the scenic [NKVE](https://en.wikipedia.org/wiki/New_Klang_Valley_Expressway). I walked into the office to find it empty. Leisurely, I started munching the piece of bread I had packed earlier. The space was small, yet it offered a much-needed tranquility after a tiring commute. I sank into the comfortable office armchair, gazing at the morning cityscape through the floor-to-ceiling window. Not long after, a knock on the door broke the solitude. My colleague walked in and greeted me, marking the start of the workday.
