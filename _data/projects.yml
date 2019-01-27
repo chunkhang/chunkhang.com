@@ -6,6 +6,10 @@
   description: A minimalistic tab manager
   tags: web addon vue javascript
   link: http://github.com/chunkhang/tabo
+- name: Git Stack
+  description: A more user-friendly git stash
+  tags: console script npm javascript
+  link: http://github.com/chunkhang/git-stack
 - name: Propel
   description: Shell script for pushing commits
   tags: console script homebrew shell
