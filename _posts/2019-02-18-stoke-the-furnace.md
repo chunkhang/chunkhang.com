@@ -19,7 +19,7 @@ Month unto month,
 Year unto year.  
 
 The blaze of yesterday  
-are but embers today.  
+is but embers today.  
 
 What remains of the furnace?  
 Neglected, abandoned, forgotten.  
