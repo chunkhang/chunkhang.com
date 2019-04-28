@@ -59,3 +59,5 @@ exclude:
   - pdf
   - wkhtmltopdf
   - favicon.sketch
+  - .tags
+  - .tags.*
