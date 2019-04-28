@@ -59,4 +59,3 @@ exclude:
   - pdf
   - wkhtmltopdf
   - favicon.sketch
-  - .ackrc
