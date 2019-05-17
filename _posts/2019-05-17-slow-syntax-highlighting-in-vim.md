@@ -72,7 +72,10 @@ Since I dislike short forms, I went with this:
 set regexengine=1
 ```
 
-You can read the entry about the option with `:help regexengine`.
+You can read the entry about the option with `:help regexengine`. Of
+course, we could also disable syntax highlighting completely with
+`:syntax off`. That would literally solve the root of the problem, if
+you could live with a life without colours.
 
 [my-vimrc]: https://github.com/chunkhang/dotfiles/blob/master/vimrc
 [junegunn]: https://github.com/junegunn
