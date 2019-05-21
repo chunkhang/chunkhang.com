@@ -44,6 +44,7 @@ assets:
     - seo-img.jpg
     - seo-logo.png
     - walking-musician.png
+    - railroad.jpg
 
 defaults:
   - scope:
