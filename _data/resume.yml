@@ -55,8 +55,9 @@ skills:
       - Git
     tool:
       - Vim
-      - Sublime Text
       - iTerm
+      - WeeChat
+      - tmux
       - Sketch
       - Illustrator
       - Photoshop
