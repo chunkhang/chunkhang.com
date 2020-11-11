@@ -16,56 +16,30 @@ profile: >
 skills:
   technical:
     language:
-      - HTML
-      - CSS
       - JavaScript
-      - Go
       - Python
-      - Java
-      - Scala
+      - Go
       - Shell
-    technology:
-      - Bootstrap
-      - Bulma
-      - Sass
-      - CoffeeScript
-      - jQuery
+    framework:
       - React
-      - Vue.js
-      - Jekyll
-      - Flask
-      - Click
-      - Play
+      - React Native
     database:
-      - MongoDB
       - Postgres
-      - Oracle
+      - MongoDB
       - Redis
-      - Neo4j
-    deployment:
+    cloud:
+      - AWS
       - DigitalOcean
-      - Heroku
-      - Travis CI
-      - Nginx
-      - Ubuntu
-    packaging:
-      - PyPI
-      - Homebrew
-    versioning:
-      - Git
-    tool:
-      - Vim
-      - iTerm
-      - WeeChat
-      - tmux
-      - Sketch
-      - Illustrator
-      - Photoshop
-      - Slack
+      - Firebase
+    delivery:
+      - Docker
+      - Kubernetes
+      - CircleCI
+      - Bitbucket Pipelines
+      - App Center
   additional:
-    - Team Leadership
-    - Project Management
-    - Event Planning
+    - Team leadership
+    - Project management
     - Design
     - Editing
     - Proofreading
