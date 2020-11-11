@@ -139,4 +139,4 @@ DEPENDENCIES
   wkhtmltopdf-installer (~> 0.12.5)
 
 BUNDLED WITH
-   1.14.6
+   2.1.4
