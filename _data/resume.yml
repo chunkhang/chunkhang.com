@@ -23,6 +23,8 @@ skills:
     framework:
       - React
       - React Native
+      - Gatsby
+      - Flask
     database:
       - Postgres
       - MongoDB
@@ -109,7 +111,7 @@ extra:
     detail:
       - Acted as chairman for Bon Musique, an annual concert to raise funds for the club
       - Organised Two Evenings of Musical Splendour, a two-part recital to showcase the musical talents of the club
-      - Handled the Triplet concert, a collaboration between Sunway University, Monash University and Taylor’s University
+      - Handled the Triplet concert, a collaboration between Sunway University, Monash University and Taylor's University
   - position: President
     place: Sunway Taekwondo Club
     period: Nov 2015 - Oct 2016
