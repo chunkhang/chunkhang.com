@@ -51,14 +51,18 @@ skills:
 work:
   - position: Lead Software Engineer
     place: Pickupp
-    period: Nov 2018 - Present
+    period: Jan 2020 - Present
     detail:
-      - Engaged in full-stack development for web and app
       - Led a team of software engineers to deliver high-impact features
       - Managed and completed challenging projects like Shop on Pickupp
-      - Introduced improvements to engineering workflows and practices
       - Routinely performed sprint planning and code deployment
       - Actively participated in high-level product discussions
+  - position: Junior Software Engineer
+    place: Pickupp
+    period: Nov 2018 - Dec 2019
+    detail:
+      - Engaged in full-stack development for web and app
+      - Introduced improvements to engineering workflows and practices
       - Involved in communication with external API partners
   - position: Full Stack Software Engineer
     place: Vase.ai
@@ -67,16 +71,13 @@ work:
       - Served a three-month internship
       - Worked closely with CTO and CEO to identify requirements, implement features and gather feedback
       - Developed Ops Tool, an internal web tool that automates the processes of data cleaning and tabulation
-      - Significantly reduced the manual labour of the Ops Team
   - position: Research Assistant
     place: Sunway University
     period: Nov 2015 - Mar 2017
     detail:
       - Assisted Dr Malissa Maria Mahmud, a PhD candidate, to complete her doctorate on blended learning
       - Extracted data from voluminous research papers
-      - Engaged in critical discussions
       - Proofread thesis and prepared for viva
-      - Thesis awarded Best Dissertation Award by Universiti Teknologi MARA
 
 education:
   - name: BSc (Hons) in Computer Science
