@@ -49,9 +49,12 @@ skills:
     - Proofreading
 
 work:
+  - position: Senior Software Engineer
+    place: Omnilytics
+    period: Feb 2021 - Present
   - position: Lead Software Engineer
     place: Pickupp
-    period: Jan 2020 - Present
+    period: Jan 2020 - Feb 2021
     detail:
       - Led a team of software engineers to deliver high-impact features
       - Managed and completed challenging projects like Shop on Pickupp
