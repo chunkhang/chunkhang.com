@@ -87,20 +87,17 @@ education:
     place: Sunway University
     period: Mar 2016 - Jul 2018
     detail:
-      - Attained 79.06% overall average
-      - Graduated with first-class honours
+      - Graduated with 79.06% overall average and first-class honours
   - name: American Degree Transfer Program (ADTP)
     place: Sunway University
     period: Jan 2014 - Dec 2015
     detail:
-      - Attained 3.96 CGPA
-      - Graduated with summa cum laude
+      - Gaduated with 3.96 CGPA and summa cum laude
   - name: Malaysian Certificate of Education (SPM)
     place: Catholic High School
     period: 2013
     detail:
-      - Attained 11A's
-      - Graduated from science stream
+      - Graduated from science stream with 11A's
 
 extra:
   - position: Vice President
